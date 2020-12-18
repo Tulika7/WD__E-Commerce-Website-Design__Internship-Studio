@@ -1,0 +1,931 @@
+@media (min-width: 1441px){
+body{
+  margin: 0px;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;  
+}
+.Main{
+height: 100vh;
+width: 100%;
+}
+.Hover{
+height: 100vh;
+width: 100%;
+background-color: rgba(5, 5, 5, 0.534);
+}
+nav ul li{
+  padding-right: 150px;
+  list-style-type: none;
+  float: left;
+  font-size: 20px;
+  color:#66FCF1;
+}
+nav ul{
+  float: right;
+}
+nav{
+  background:#1F2833;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color:#66FCF1;
+}
+.Home{
+  display: table;
+  height: 100vh;
+  width: 100%;
+  background:url("img/Home_Banner_Main.png");  
+  font-size: 56px;
+  color: #66FCF1;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+}
+.Home img{
+  border-radius: 100%;
+  width: 450px;
+  height: 450px;
+  vertical-align: middle;
+  padding-bottom:50px; 
+  padding-top: 50px;
+  margin-top: 70px;
+}
+.About{
+  display: table-cell;
+  height: 700px;
+  width: 100%;
+  background: url("img/About_Banner_Main.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  padding: 10px;
+  float: right;
+  padding-bottom: 100px;
+}
+.About .Inner{
+  margin-top: 120px;   
+  width: 55%;
+  font-size: 30px;
+  float: right;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+
+.About .Inner b{
+  font-size: 50px;
+}
+
+.Education{
+  display: table;
+  background: url("img/Edu Banner.jpg");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  background-color: rgba(5, 5, 5, 0.534);
+  padding-bottom: 100px;
+}
+.Education .Inner{
+  height: 70%;
+  width: 70%;
+  color: rgb(209, 209, 209);
+  padding-top: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle; 
+  padding: 100px;
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+.Education .Inner div{
+  width: 23%;
+  margin-right: 17px;
+  float: left;
+  color: rgb(209, 209, 209);
+  font-size: 29px;
+  padding-top: 15px;
+  margin-bottom: 35px;
+  
+}
+.Education .Inner div img{
+  padding-left: 20px;
+  width: 120px;
+  height: 120px;
+}
+.Education .Inner b{
+  font-size: 46px;
+}
+.Skills{
+  display: table;
+  background: url("img/Skills_Banner_Main.jpg");
+  list-style-type: none;
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  padding-top: 80px; 
+
+}
+.Skills .Inner{
+  width: 75%;
+  color:white; 
+  padding: 40px;
+  font-size: 46px;
+  float: left;
+}
+ 
+.Skills .Inner div{
+  width: 20%;
+  margin-right: 40px;
+  margin-left: 10px;
+  float: left;
+  color: white;
+  font-size: 30px;
+  padding-top: 40px;
+  padding-right: 30px;
+} 
+.Skills .Inner b, .Hobbies .Inner b{
+  font-size: 42px;  
+}
+.Hobbies{
+  display: table;
+  background: url("img/Hobbies 00.jpg");
+  list-style-type: none;
+  height: 80vh;
+  width: 100%;
+  float: right;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  padding-top:6%;
+}
+.Hobbies .Inner{
+  color:#1F2833; 
+  padding-top: 80px;
+  padding-bottom: 100px;
+  width: 50%;
+  font-size: 48px;
+  float: right;
+}
+
+.Hobbies .Inner div{
+  width: 30%;
+  margin-right: 70px;
+  margin-left: 50px;
+  float: left;
+  color: #1F2833;
+  font-size: 36px;
+
+  padding-top: 70px;
+}
+.Hobbies .Inner div img{
+  width: 140px;
+  height: 140px;
+}
+.Contact{
+  display: table;
+  background: url("img/Contact Banner.jpg");
+  list-style-type: none;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+.Contact .Inner{
+  height: 70vh;
+  width: 80%;
+  color:#1F2833; 
+  font-size: 48px;
+  padding-top: 7%;
+  padding-left: 100px;
+  float: left;
+}
+.Contact .Inner div{
+  color: #1F2833;
+  font-size: 32px;
+  padding: 15px;
+}
+.Contact .Inner div img{
+  width: 70px;
+  height: 70px;
+
+}
+.Contact .Inner div a{
+  text-decoration: none;
+  color:black;
+}
+}
+@media (min-width: 1025px) and (max-width: 1440px){
+body{
+  margin: 0px;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;  
+}
+.Main{
+height: 100vh;
+width: 100%;
+}
+.Hover{
+height: 100vh;
+width: 100%;
+background-color: rgba(5, 5, 5, 0.534);
+}
+nav ul li{
+  padding-right: 50px;
+  list-style-type: none;
+  float: left;
+  font-size: 16px;
+  color:#66FCF1;
+}
+nav ul{
+  float: right;
+}
+nav{
+  background:#1F2833;
+  width:  100%;
+  height: 50px;
+  position: fixed;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color:#66FCF1;
+}
+
+.Home{
+  display: table;
+  height: 330px;
+  width: 100%;
+  background:url("img/Home_Banner_Main.png");  
+  font-size: 30px;
+  color: #66FCF1;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+}
+.Home img{
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  vertical-align: middle;
+  padding-bottom:50px; 
+  padding-top: 50px;
+  margin-top: 50px;
+}
+.About{
+  display: table-cell;
+  height: 330px;
+  width: 100%;
+  background: url("img/About_Banner_Main.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  padding: 20px;
+  float: right;
+}
+.About .Inner{
+  height: 90%;
+  width: 55%;
+  font-size: 18px;
+  float: right;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.About .Inner b{
+  font-size: 32px;
+}
+
+.Education{
+  display: table;
+  background: url("img/Edu Banner.jpg");
+  height: 400px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  background-color: rgba(5, 5, 5, 0.534);
+}
+.Education .Inner{
+  height: 60%;
+  width: 85%;
+  padding-left: 50px;
+  color: rgb(209, 209, 209);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle; 
+}
+
+.Education .Inner div{
+  width: 20%;
+  margin-right: 15px;
+  float: left;
+  color: rgb(209, 209, 209);
+  font-size: 17px;
+  padding-top: 15px;
+  
+  padding-bottom: 30px;
+}
+.Education .Inner div img{
+  padding-left: 40px;
+  width: 100px;
+  height: 80px;
+}
+.Education .Inner b{
+  font-size: 34px;
+}
+.Skills{
+  display: table;
+  background: url("img/Skills_Banner_Main.jpg");
+  list-style-type: none;
+  width: 98.3%;
+  height: 330px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  padding-top: 20px; 
+  padding-left: 20px;
+}
+.Skills .Inner{
+  width: 75%;
+  color:white; 
+  padding: 40px;
+  font-size: 22px;
+  float: left;
+}
+ 
+.Skills .Inner div{
+  width: 20%;
+  margin-right: 40px;
+  margin-left: 10px;
+  float: left;
+  color: white;
+  font-size: 20px;
+  padding-top: 70px;
+  padding-right: 30px;
+} 
+.Skills .Inner b, .Hobbies .Inner b{
+  font-size: 34px;  
+}
+.Hobbies{
+  display: table;
+  background: url("img/Hobbies 00.jpg");
+  list-style-type: none;
+  height: 80vh;
+  width: 100%;
+  float: right;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  
+}
+.Hobbies .Inner{
+  color:#1F2833; 
+  padding-top: 80px;
+  padding-bottom: 100px;
+  width: 50%;
+  font-size: 22px;
+  float: right;
+}
+
+.Hobbies .Inner div{
+  width: 20%;
+  margin-right: 70px;
+  margin-left: 50px;
+  float: left;
+  color: #1F2833;
+  font-size: 18px;
+
+  padding-top: 70px;
+}
+.Hobbies .Inner div img{
+  width: 140px;
+  height: 140px;
+}
+.Contact{
+  display: table;
+  background: url("img/Contact Banner.jpg");
+  list-style-type: none;
+  height: 350px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  float: right;
+}
+.Contact .Inner{
+  height: 90vh;
+  width: 80%;
+  color:#1F2833; 
+  font-size: 25px;
+  padding-top: 50px;
+  padding-left: 100px;
+  float: left;
+}
+.Contact .Inner div{
+  color: #1F2833;
+  font-size: 18px;
+  padding: 15px;
+}
+.Contact .Inner div img{
+  width: 30px;
+  height: 30px;
+
+}
+.Contact .Inner div a{
+  text-decoration: none;
+  color:black;
+}
+}
+@media (min-width: 768px) and (max-width: 1024px){
+body{
+  margin: 0px;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;  
+}
+.Main{
+height: 100vh;
+width: 100%;
+}
+.Hover{
+height: 330px;
+width: 100%;
+background-color: rgba(5, 5, 5, 0.534);
+}
+nav ul li{
+  padding-right: 25px;
+  list-style-type: none;
+  float: left;
+  font-size: 14px;
+  color:#66FCF1;
+  vertical-align: middle;
+}
+nav ul{
+  float: right;
+}
+nav{
+  background:#1F2833;
+  width:  100%;
+  height: 50px;
+  position: fixed;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color:#66FCF1;
+}
+.Home{
+
+  height: 330px;
+  width: 100%;
+  background:url("img/Home_Banner_Main.png");  
+  font-size: 26px;
+  color: #66FCF1;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+}
+.Home img{
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  vertical-align: middle;
+  padding-bottom:30px; 
+  padding-top: 30px;
+  margin-top: 30px;
+}
+.About{
+  display: table-cell;
+  height: 310px;
+  width: 100%;
+  background: url("img/About_Banner_Main.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  padding: 10px;
+  float: right;
+  padding-top: 5%;
+}
+.About .Inner{
+  width: 55%;
+  font-size: 16px;
+  float: right;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.About .Inner b{
+  font-size: 26px;
+}
+
+.Education{
+  display: table;
+  background: url("img/Edu Banner.jpg");
+  height: 330px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  background-color: rgba(5, 5, 5, 0.534);
+}
+.Education .Inner{
+  height: 70%;
+  width: 93%;
+  padding-left: 50px;
+  color: rgb(209, 209, 209);
+  padding-top: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle; 
+}
+
+.Education .Inner div{
+  width: 20%;
+  margin-right: 15px;
+  float: left;
+  color: rgb(209, 209, 209);
+  font-size: 16px;
+  padding-top: 15px;
+}
+.Education .Inner div img{
+  padding-left: 20px;
+  width: 80px;
+  height: 60px;
+}
+.Education .Inner b{
+  font-size: 26px;
+}
+.Skills{
+  display: table;
+  background: url("img/Skills_Banner_Main.jpg");
+  list-style-type: none;
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  padding-top: 20px; 
+
+}
+.Skills .Inner{
+  width: 75%;
+  color:white; 
+  padding: 40px;
+  font-size: 16px;
+  float: left;
+}
+ 
+.Skills .Inner div{
+  width: 20%;
+  margin-right: 20px;
+  margin-left: 10px;
+  float: left;
+  color: white;
+  font-size: 16px;
+  padding-top: 40px;
+  padding-right: 30px;
+} 
+.Skills .Inner b, .Hobbies .Inner b{
+  font-size: 26px;  
+}
+.Hobbies{
+  display: table;
+  background: url("img/Hobbies 00.jpg");
+  list-style-type: none;
+  height: 330px;
+  width: 100%;
+  float: right;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  
+}
+.Hobbies .Inner{
+  color:#1F2833; 
+  padding-top: 60px;
+  padding-bottom: 90px;
+  width: 50%;
+  font-size: 16px;
+  float: right;
+}
+
+.Hobbies .Inner div{
+  width: 20%;
+  margin-right: 40px;
+  margin-left: 40px;
+  float: left;
+  color: #1F2833;
+  font-size: 16px;
+  padding-top: 30px;
+}
+.Hobbies .Inner div img{
+  width: 80px;
+  height: 80px;
+}
+.Contact{
+  display: table;
+  background: url("img/Contact Banner.jpg");
+  list-style-type: none;
+  height: 330px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+.Contact .Inner{
+  height: 70vh;
+  width: 80%;
+  color:#1F2833; 
+  font-size: 26px;
+  padding-top: 50px;
+  padding-left: 80px;
+  float: left;
+}
+.Contact .Inner div{
+  color: #1F2833;
+  font-size: 16px;
+  padding: 10px;
+}
+.Contact .Inner div img{
+  width: 22px;
+  height: 22px;
+
+}
+.Contact .Inner div a{
+  text-decoration: none;
+  color:black;
+}
+}
+
+@media (max-width: 767px){
+body{
+  margin: 0px;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;  
+}
+.Main{
+height: 100vh;
+width: 100%;
+}
+.Hover{
+height: 215px;
+width: 100%;
+background-color: rgba(5, 5, 5, 0.534);
+}
+nav ul li{
+  padding-right: 10px;
+  list-style-type: none;
+  float: left;
+  font-size: 9px;
+  color:#66FCF1;
+  vertical-align: middle;
+}
+nav ul{
+  float: right;
+}
+nav{
+  background:#1F2833;
+  width:  100%;
+  height: 45px;
+  position: fixed;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color:#66FCF1;
+}
+.Home{
+
+  height: 215px;
+  width: 100%;
+  background:url("img/Home_Banner_Main.png");  
+  font-size: 16px;
+  color: #66FCF1;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+}
+.Home img{
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  padding-bottom:20px; 
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.About{
+  display: table-cell;
+  height: 215px;
+  width: 100%;
+  background: url("img/About_Banner_Main.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  float: right;
+  padding-top: 15%;
+}
+.About .Inner{
+  width: 55%;
+  font-size: 9px;
+  float: right;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.About .Inner b{
+  font-size: 15px;
+}
+
+.Education{
+  display: table;
+  background: url("img/Edu Banner.jpg");
+  height: 260px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  background-color: rgba(5, 5, 5, 0.534);
+  padding-bottom: 30px;
+}
+.Education .Inner{
+  height: 60%;
+  width: 80%;
+  padding-left: 20px;
+  color: rgb(209, 209, 209);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle; 
+}
+
+.Education .Inner div{
+
+  margin-right: 10px;
+  float: left;
+  color: rgb(209, 209, 209);
+  font-size: 12px;
+  padding-top: 15px;
+}
+.Education .Inner div img{
+  padding-left: 10px;
+  width: 40px;
+  height: 40px;
+}
+.Education .Inner b{
+  font-size: 16px;
+}
+.Skills{
+  display: table;
+  background: url("img/Skills_Banner_Main.jpg");
+  list-style-type: none;
+  width: 100%;
+  height: 220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  padding-top: 30px; 
+
+}
+.Skills .Inner{
+  width: 80%;
+  color:white; 
+  padding-left: 5px;
+  font-size: 12px;
+  float: left;
+}
+ 
+.Skills .Inner div{
+  width: 19%;
+  margin-right: 25px;
+  margin-left: 10px;
+  float: left;
+  color: white;
+  font-size: 11px;
+  padding-top: 20px;
+
+} 
+.Skills .Inner b, .Hobbies .Inner b{
+  font-size: 12px;  
+}
+.Hobbies{
+  display: table;
+  background: url("img/Hobbies 00.jpg");
+  list-style-type: none;
+  height: 240px;
+  width: 100%;
+  float: right;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  
+}
+.Hobbies .Inner{
+  color:#1F2833; 
+  padding-top: 35px;
+  padding-bottom: 15px;
+  width: 60%;
+  font-size: 22px;
+  float: right;
+}
+
+.Hobbies .Inner div{
+  width: 30%;
+  margin-right: 10px;
+  margin-left: 10px;
+  float: left;
+  color: #1F2833;
+  font-size: 10px;
+
+}
+.Hobbies .Inner div img{
+  width: 40px;
+  height: 40px;
+}
+.Contact{
+  display: table;
+  background: url("img/Contact Banner.jpg");
+  list-style-type: none;
+  height: 280px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+.Contact .Inner{
+
+  width: 80%;
+  color:#1F2833; 
+  font-size: 18px;
+  padding-top: 50px;
+  padding-left: 18px;
+  float: left;
+}
+.Contact .Inner div{
+  color: #1F2833;
+  font-size: 11px;
+
+}
+.Contact .Inner div img{
+  width: 18px;
+  height: 18px;
+
+}
+.Contact .Inner div a{
+  text-decoration: none;
+  color:black;
+}
+}
