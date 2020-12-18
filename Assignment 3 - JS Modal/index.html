@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+     <ul class="Outside">
+        <a class="TL" href="#myModalTopLeft" onclick="document.getElementById('myModalTopLeft').style.display='block'" id="myBtn"><li class="Main"><b> Top-Left<br><CENTER> LINKEDIN</CENTER></b></li></a>
+        <a class="TR" href="#myModalTopRight" onclick="document.getElementById('myModalTopRight').style.display='block'" id="myBtn"><li class="Main"><b style="float:right"> Top-Right</b><b><br><CENTER> FACEBOOK</CENTER></b></li></a>
+        <a class="BL" href="#myModalBottomLeft" onclick="document.getElementById('myModalBottomLeft').style.display='block'" id="myBtn"><li class="Main"><b style="position: absolute; bottom: 9%;"> Bottom-Left</b><b><br><CENTER> INSTAGRAM</CENTER></b></li></a>
+        <a class="BR "href="#myModalBottomRight" onclick="document.getElementById('myModalBottomRight').style.display='block'" id="myBtn"><li class="Main"><b style="position: absolute; bottom: 9%; right:7%;"> Bottom-Right</b><b><br><CENTER> TWITTER</CENTER></b></li></a>
+      </ul>
+        <div id="myModalTopLeft" class="modalTL">
+               <!-- Modal content -->
+               <div class="modal-content1">
+                 <span class="close" onclick="document.getElementById('myModalTopLeft').style.display='none'" style="color:black">x</span>
+                 <ul>
+                   <li style="width:35%;"><img class="fb" style="width: 65%; height: 65%; padding:1%;" src="img/linkedin.jpg"></li>
+                   <li style="font-size:120%; width:60%;"> 
+                     <p>LinkedIn is an American business and employment-oriented online service that operates via websites and mobile apps. Launched on May 5, 2003, it is mainly used for professional networking, including employers posting jobs and job seekers posting their CVs. As of 2015, most of the company's revenue came from selling access to information about its members to recruiters and sales professionals. Since December 2016 it has been a wholly owned subsidiary of Microsoft.</p>
+                     </li>
+                 </ul>
+               </div>
+        </div>
+        <div id="myModalTopRight" class="modalTR">
+               <!-- Modal content -->
+               <div class="modal-content2">
+                 <span class="close" onclick="document.getElementById('myModalTopRight').style.display='none'" style="color:black">x</span>
+                 <ul>
+                   <li style="width:35%;"><img class="fb" style="width: 65%; height: 65%; padding:1%;" src="img/fb.jpg"></li>
+                   <li style="font-size:120%; width:60%;"> 
+                     <p><br>Facebook is an American online social media and social networking service based in Menlo Park, California, and a flagship service of the namesake company Facebook, Inc. It was founded by Mark Zuckerberg, along with fellow Harvard College students and roommates Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.</p>
+                     </li>
+                 </ul>
+               </div>
+        </div>
+        <div id="myModalBottomLeft" class="modalBL">
+               <!-- Modal content -->
+               <div class="modal-content3">
+                 <span class="close" onclick="document.getElementById('myModalBottomLeft').style.display='none'" style="color:black">x</span>
+                 <ul>
+                   <li style="width:35%;"><img class="fb" style="width: 65%; height: 65%; padding:1%;" src="img/instagram.jpg"></li>
+                   <li style="font-size:120%; width:60%;"> 
+                     <p>Instagram is an American photo and video sharing social networking service owned by Facebook, created by Kevin Systrom and Mike Krieger and originally launched on iOS in October 2010. The Android version was released in April 2012, followed by a feature-limited desktop interface in November 2012, a Fire OS app in June 2014, and an app for Windows 10 in October 2016. The app allows users to upload media that can be edited with filters and organized by hashtags and geographical tagging.</p>
+                     </li>
+                 </ul>
+               </div>
+        </div>
+        <div id="myModalBottomRight" class="modalBR">
+               <!-- Modal content -->
+               <div class="modal-content4">
+                 <span class="close" onclick="document.getElementById('myModalBottomRight').style.display='none'" style="color:black">x</span>
+                 <ul>
+                   <li style="width:35%;"><img class="fb" style="width: 65%; height: 65%; padding:1%;" src="img/twitter.jpg"></li>
+                   <li style="font-size:120%; width:60%;"> 
+                     <p>Twitter is an American microblogging and social networking service on which users post and interact with messages known as "tweets". Registered users can post, like, and retweet tweets, but unregistered users can only read them. Users access Twitter through its website interface, through Short Message Service or its mobile-device application software. Twitter, Inc. is based in San Francisco, California, and has more than 25 offices around the world.</p>
+                     </li>
+                 </ul>
+               </div>
+        </div>
+    <script src="script.js"></script>
+  </body>
+</html>

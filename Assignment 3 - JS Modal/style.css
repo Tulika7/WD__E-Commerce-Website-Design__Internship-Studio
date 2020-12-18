@@ -1,0 +1,73 @@
+body{
+  width: 99.1%;
+  position: fixed;
+}
+.Outside{
+  width: 95.8%;
+  height: 599px;
+  background-color: salmon;
+  margin:0%;
+  padding: 2%;
+}
+.Main{
+  width: 42%;
+  height: 30vh;
+  background-color: white;
+  padding: 3%;
+  float: left;
+  margin: 1%;
+  list-style-type: none;
+  text-decoration: none;
+  color: darkslategray
+}
+
+
+
+.modalTL, .modalTR, .modalBL, .modalBR {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content1, .modal-content2, .modal-content3, .modal-content4 {
+  background-color: #fefefe;
+  margin: 6% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  height: 40%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content1 ul li, .modal-content2 ul li, .modal-content3 ul li, .modal-content4 ul li{
+  list-style-type: none;
+  float: left;
+  width: 50%;
+  margin-top: 2%;
+}
+
+.modal-content1 ul li p, .modal-content2 ul li p, .modal-content3 ul li p, .modal-content4 ul li p{
+  display: inline;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
