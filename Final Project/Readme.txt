@@ -1,4 +1,10 @@
-Project Name: EL-Commercio
+Project Title: Build an E-Commerce Website
+
+
+Design and Development of Shopping Website using HTML, CSS, JS:
+
+Website Name: EL-Commercio
+
 Features: 
 1. Here is total 8 pages, Home, About Us, Contact Us, Groceries, House Hold, Personal Care, Packed Foods and Cart.
 2. All pages are responsive for all the devices.
