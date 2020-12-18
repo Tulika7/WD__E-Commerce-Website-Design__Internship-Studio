@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | EL-Commercio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header><center>
+      <ul>
+        <li class="Ad"> SALE UP TO 70% OFF. USE CODE "SALE70%". </li>
+        <li class="Login"><a href="#myModalLogin" onclick="document.getElementById('myModalLogin').style.display='block'" id="myBtn"><b> Login </b></a></li>
+        <li class="Signup"><a href="#myModalSignup" onclick="document.getElementById('myModalSignup').style.display='block'" id="myBtn"><b> Signup </b></a></li>
+        <li class="Help"><a href="#Help"><b> Help </b></a></li>
+        <li class="Cart"><a href="Cart.html"> <img class="Cart" src="img/cart.png"></a></li>
+      </ul>
+        <div id="myModalLogin" class="modalLS">
+               <!-- Modal content -->
+               <div class="modal-content3">
+                 <span class="close" onclick="document.getElementById('myModalLogin').style.display='none'" style="color:black">x</span>
+                 <center><img class="ava" src="img/DP3.png"></center>
+                 <center><b style="font-size:30px;"><br> Log In </b></center><br>
+                 <form name="myForm" onsubmit="logindone()" method="post">
+                   <ul style="margin-left:0%; padding-left:0%;">
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <input type="email" name="email"  class="email" placeholder="Email" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <input type="password" name="password" class="password" placeholder="Password" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <b><a><input type="submit" class="submitLogin" value="Submit"></a></b>
+                     </li>
+                   </ul>
+                 </form>
+               </div>
+        </div>
+        <div id="myModalSignup" class="modalLS">
+               <!-- Modal content -->
+               <div class="modal-content4">
+                 <span class="close" onclick="document.getElementById('myModalSignup').style.display='none'" style="color:black">x</span>
+                 <img class="ava" src="img/DP3.png">
+                 <center><b style="font-size:150%;"><br> Sign Up </b></center>
+                 <form name="myForm" onsubmit="return checkPassword(this)" method="post">
+                   <ul style="margin-left:0%; padding-left:0%;">
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <input type="text" name="fname" placeholder="First Name" class="fname" required>
+                     </li>
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <input type="text" name="lname" class="lname" placeholder="Last Name" required><br>
+                     </li>
+                     <br><b style="font-size: 100%;">Gender:</b>
+                     <input type="radio" id="male" name="gender" value="male" >
+                     <label for="male" style="font-size:60%;">Male</label>
+                     <input type="radio" id="female" name="gender" value="female">
+                     <label for="female" style="font-size:60%;">Female</label>
+                     <input type="radio" id="other" name="gender" value="other">
+                     <label for="other" style="font-size:60%;">Other</label>
+                      <br><br><b style="font-size: 80%;">Date of Birth: &nbsp&nbsp</b>
+                      <input type="date" id="birthday" name="birthday"><br>
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <br><input type="email" name="email" placeholder="Email" class="email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <input type="password" name="password" placeholder="Password" class="password" required><br>
+                     </li>
+                     <li style="margin-left:3%; padding-left:0%; color:red;">
+                     * 1 Lower letter, 1 Capital letter, 1 digit and 1-8 characters.<br>
+                     </li>
+                     <br>
+                     <li>
+                       <input type="password" name="apassword" placeholder="Again Password" class="apassword"required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <b><a><input type="submit" class="submitSignup" value="Submit"></a></b>
+                     </li>
+                   </ul>
+                 </form>
+               </div>
+        </div>
+
+    <center>
+    <section class="LBS">
+       <ul>
+        <li class="Call"><a href="#Call"> <img class="Call" src="img/call.png"></a></li>
+        <li class="Dial"> Order online or call us : (+0123) 234 567 <a href="#Dial"></a></li>
+        <li class="Brand"><a href="#Brand"><img class="Brand" src="img/logo.png"></a></li>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><img class="Search" src="img/search.png"></button>
+      </ul>
+    </section>
+    </center>
+    
+    <center>
+    <nav>
+      <ul>
+        <a href="index.html"><li class="Home"> Home </li></a>
+        <a href="Grocery.html"> <li class="Groceries">Groceries </li></a>
+        <a href="HouseHold.html"> <li class="Household">House Hold </li></a>
+        <a href="PersonalCare.html"><li class="PersonalCare"> Personal Care </li></a>
+        <a href="PackedFoods.html"><li class="PackedFoods"> Packed Foods </li></a>
+        <a href="AboutUs.html"><li class="AboutUs"> About Us </li></a>
+        <a href="ContactUs.html"><li class="ContactUs"> Contact Us </li></a>
+      </ul>
+    </nav>
+    </center>
+    </header>
+    
+
+<section class="ContactUsT">
+  <div class="Main">
+    <br><b style="font-size:150%;"><center> Contact Us </center></b>
+    <form name="myForm" onsubmit="document.getElementById('myModalValidate').style.display='block'" method="post">
+      <ul>
+        <li><b style="font-size: 60%">(<b style="color:red">*</b>) mark fields are mandatory to fill up.</b></li>
+        <li><h5>First Name<b style="color:red">*</b>: </h5><input type="text" name="fname" style="width:50%; height:20px;" required><br></li>
+        <li><h5>Last Name<b style="color:red">*</b>: </h5><input type="text" name="lname" style="width:50%; height:20px;" required><br></li>
+        <li><h5>Mobile Number<b style="color:red">*</b>: </h5><input type="tel" name="mobnumber" placeholder="9876543210" minlength="10" maxlength="10" style="width:50%; height:20px;" required><br></li>
+        <li><h5>Email<b style="color:red">*</b>: </h5><input type="email" name="email" style="width:50%; height:20px;" required><br></li>
+        <li><h5>Country: </h5><input type="text" name="country" style="width:50%; height:30px;"><br></li>
+        <li><h5>Query<b style="color:red">*</b>: </h5><input type="text" name="query" style="height:200px; width:80%;" required><br></li>
+        <li><input type="submit" class="submit" value="Submit"></li>
+      </ul>
+    </form>
+  </div>
+
+  <div id="myModalValidate" class="modalContact">
+               <!-- Modal content -->
+              <div class="modal-content2">
+                <center><h5>Your query is submitted successfully!!</h5></center>
+                </div>
+              </div>
+  </div>
+</section>
+
+    
+    <footer>
+
+    <div class="footerNav">
+      <div>
+        <img class="DP" style="width: 200px; height:200px; margin-top:1%; margin-bottom:1%; margin-left:7%; padding:5%;" src="img/logo2.jpg">
+      </div>
+      <div>
+      <ul>
+        <li style="font-size:24px; color:rgb(240, 226, 38); padding-top:3%;"><b>Inportant Links </b></li><br>
+        <li class="Home"><a href="index.html"> Home </a></li>
+        <li class="Groceries"><a href="Grocery.html">Groceries </a></li>
+        <li class="Household"><a href="HouseHold.html">House Hold </a></li>
+        <li class="PersonalCare"><a href="PersonalCare.html"> Personal Care</a></li>
+        <li class="PackedFoods"><a href="PackedFoods.html"> Packed Foods </a></li>
+        <li class="AboutUs"><a href="AboutUs.html"> About Us </a></li>
+        <li class="ContactUs"><a href="ContactUs.html"> Contact Us </a></li>
+      </ul>
+      </div>
+      <div>
+      <ul>
+        <li style="font-size:24px; color:rgb(240, 226, 38); padding-top:3%;"><b>Details</b></li><br>
+        <li><b style="color:white">Mobile: &nbsp </b><a style="font-size: 16px;" href="tel:7278146025"> +91-7278146025</a></li>
+        <li><b style="color:white">Email:&nbsp </b><a style="font-size: 16px;" href="mailto:mailmetulika98@gmail.com?subject=subject text"> mailmetulika98@gmail.com </a></li>
+        <li><b style="color:white">Linkedin:&nbsp </b><a  style="font-size: 16px;"href="https://www.linkedin.com/in/tulika-panjal-037507193"> www.linkedin.com/in/tulika-panjal-037507193</a></li>
+        <li><b style="color:white">Instagram:&nbsp </b><a  style="font-size: 16px;"href="https://www.instagram.com/rong_tuli_7"> www.instagram.com/rong_tuli_7</a></li>
+        <li><b style="color:white">Facebook: &nbsp</b><a  style="font-size: 16px;"href="https://www.fb.com/tulikapanjal.07"> www.fb.com/tulikapanjal.07 </a></li>
+      </ul><br>
+      </div>
+    </div>
+    <br>
+      <center>
+      Designed by <b> Tulika Panjal </b>
+      <br>
+      <a href="mailto:mailmetulika98@gmail.com?subject=subject text"> mailmetulika98@gmail.com </a>
+      </center>
+    </footer>
+    </body>
+</html>

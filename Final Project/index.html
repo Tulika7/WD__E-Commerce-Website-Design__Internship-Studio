@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EL-Commercio</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+	 rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<center>
+			<ul>
+				<li class="Ad"> SALE UP TO 70% OFF. USE CODE "SALE70%".</li>
+				<a href="#myModalLogIn" onclick="document.getElementById('myModalLogIn').style.display='block'" id="myBtn">
+					<li class="Login"><b> Login </b></li></a>
+        <a href="#myModalSignup" onclick="document.getElementById('myModalSignup').style.display='block'" id="myBtn"><li class="Signup"><b> Signup </b></li></a>
+        <a href="#Help"><li class="Help"><b> Help </b></li></a>
+        <a href="Cart.html"><li class="Cart"> <img class="Cart" src="img/cart.png"></li></a>
+      </ul>
+        <div id="myModalLogIn" class="modalLS">
+               <!-- Modal content -->
+               <div class="modal-content3">
+                 <span class="close" onclick="document.getElementById('myModalLogIn').style.display='none'" style="color:black">x</span>
+                 <img class="DP" style="width: 200px; height:200px; margin-top:7%; padding:0%;" src="img/DP3.png">
+                 <center><b style="font-size:30px;"><br> Log In </b></center><br>
+                 <form name="myForm" onsubmit="logindone()" method="post">
+                   <ul style="margin-left:0%; padding-left:0%;">
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <input type="email" name="email" style="width:80%; height:40px; font-size:30x;" placeholder="Email" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <input type="password" name="password" style="width:80%; height:40px; font-size:30x;" placeholder="Password" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <b><a><input type="submit" class="submitLogin" value="Submit"></a></b>
+                     </li>
+                   </ul>
+                 </form>
+               </div>
+        </div>
+        <div id="myModalSignup" class="modalLS">
+               <!-- Modal content -->
+               <div class="modal-content4">
+                 <span class="close" onclick="document.getElementById('myModalSignup').style.display='none'" style="color:black">x</span>
+                 <img class="DP" style="width: 200px; height:200px; margin-top:7%; padding:0%;" src="img/DP3.png">
+                 <center><b style="font-size:30px;"><br> Sign Up </b></center><br>
+                 <form name="myForm" onsubmit="return checkPassword(this)" method="post">
+                   <ul style="margin-left:0%; padding-left:0%;">
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <input type="text" name="fname" style="width:39%; height:40px; font-size:30x;" placeholder="First Name" required>
+                     </li>
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <input type="text" name="lname" style="width:39%; height:40px; font-size:30x;" placeholder="Last Name" required><br>
+                     </li>
+                     <br><b style="font-size: 22px;">Gender:</b>
+                     <input type="radio" id="male" name="gender" value="male">
+                     <label for="male">Male</label>
+                     <input type="radio" id="female" name="gender" value="female">
+                     <label for="female">Female</label>
+                     <input type="radio" id="other" name="gender" value="other">
+                     <label for="other">Other</label>
+                      <br><br><b style="font-size: 22px;">Date of Birth: &nbsp&nbsp</b>
+                      <input type="date" id="birthday" name="birthday"><br>
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <br><input type="email" name="email" style="width:80%; height:40px; font-size:30x;" placeholder="Email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <input type="password" name="password" style="width:80%; height:40px; font-size:30x;" placeholder="Password" required><br>
+                     </li>
+                     <li style="margin-left:3%; padding-left:0%; color:red;">
+                     * 1 Lower letter, 1 Capital letter, 1 digit and 1-8 characters.<br>
+                     </li>
+                     <br>
+                     <li>
+                       <input type="password" name="apassword" style="width:80%; height:40px; font-size:30x;" placeholder="Again Password" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <b><a><input type="submit" class="submitSignup" value="Submit"></a></b>
+                     </li>
+                   </ul>
+                 </form>
+               </div>
+        </div>
+
+    <center>
+    <section class="LBS">
+       <ul>
+        <li class="Call"> <img class="Call" src="img/call.png"></li>
+        <li class="Dial"> Order online or call us : (+0123) 234 567</li>
+        <a href="index.html"><li class="Brand"><img class="Brand" src="img/logo.png"></a></li></a>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><img class="Search" src="img/search.png"></button>
+      </ul>
+    </section>
+    </center>
+    
+    <center>
+    <nav>
+      <ul>
+        <a href="index.html"><li class="Home"> Home </li></a>
+        <a href="Grocery.html"> <li class="Groceries">Groceries </li></a>
+        <a href="HouseHold.html"> <li class="Household">House Hold </li></a>
+        <a href="PersonalCare.html"><li class="PersonalCare"> Personal Care </li></a>
+        <a href="PackedFoods.html"><li class="PackedFoods"> Packed Foods </li></a>
+        <a href="AboutUs.html"><li class="AboutUs"> About Us </li></a>
+        <a href="ContactUs.html"> <li class="ContactUs">Contact Us </li></a>
+      </ul>
+    </nav>
+    </center>
+    </header>
+    
+    <div class="Slider">
+      <div class="Slide" >
+        <img class="MySlides" src="img/banner1.jpg" style="width:100%">
+        <img class="MySlides" src="img/banner2.jpg" style="width:100%">
+        <img class="MySlides" src="img/banner3.jpg" style="width:100%">
+      </div>
+    </div>
+
+    <div class="Product">
+       <div class="row">
+         <center>
+         <div class="column">
+           <ul>
+             <li>
+               <img class="Grocery" src="img/Grocery.png">
+             </li>
+             <br>
+             <a href="Grocery.html">
+             <li class="Bar">
+               <h3><b><center> Grocery </center></b></h3>
+             </li>
+             </a>
+           </ul>
+         </div>
+         <div class="column">
+           <ul>
+             <li>
+               <img class="household" src="img/household.jpg">
+             </li>
+             <br>
+             <a href="HouseHold.html">
+             <li class="Bar">
+               <h3><b><center> House Hold </center></b></h3>
+             </li>
+             </a>
+           </ul>
+         </div>
+         <div class="column">
+           <ul>
+             <li>
+               <img class="personalcare" src="img/personalcare.png">
+             </li>
+             <br>
+             <a href="PersonalCare.html">
+             <li class="Bar">
+               <h3><b><center> Personal Care  </center></b></h3>
+             </li>
+             </a>
+           </ul>
+         </div>
+         <div class="column">
+           <ul>
+             <li>
+               <img class="packedfoods" src="img/packedfoods.jpg">
+             </li>
+             <br>
+             <a href="PackedFoods.html">
+             <li class="Bar">
+               <h3><b><center> Packed Foods </center></b></h3>
+             </li>
+             </a>
+           </ul>
+         </div>
+         </center>
+       </div>
+    </div>
+   <footer>
+
+    <div class="footerNav">
+      <div>
+        <ul>
+        <center><a href="index.html"><li><img class="DP" style=" margin-top:1%; margin-bottom:1%; margin-left:7%;" src="img/logo2.jpg"></li></a></center>
+        </ul>
+      </div>
+      <div>
+      <ul>
+        <li style="color:rgb(240, 226, 38); padding-top:.5%;"><h3><b>Inportant Links </b></h3></li>
+        <li class="Home"><a href="index.html"> Home </a></li>
+        <li class="Groceries"><a href="Grocery.html">Groceries </a></li>
+        <li class="Household"><a href="HouseHold.html">House Hold </a></li>
+        <li class="PersonalCare"><a href="PersonalCare.html"> Personal Care</a></li>
+        <li class="PackedFoods"><a href="PackedFoods.html"> Packed Foods </a></li>
+        <li class="AboutUs"><a href="AboutUs.html"> About Us </a></li>
+        <li class="ContactUs"><a href="ContactUs.html"> Contact Us </a></li>
+      </ul>
+      </div>
+      <div>
+      <ul>
+        <li style="color:rgb(240, 226, 38); padding-top:.5%;"><h3><b>Details</b></h3></li>
+        <li><b style="color:white"><h4 style="display:inline;">&nbsp&nbsp Mobile: &nbsp </h4></b><a href="tel:7278146025"> +91-7278146025</a></li>
+        <li><b style="color:white"><h4 style="display:inline;">&nbsp&nbsp Email:&nbsp </h4></b><a href="mailto:mailmetulika98@gmail.com?subject=subject text"> mailmetulika98@gmail.com </a></li>
+        <li><b style="color:white"><h4 style="display:inline;">&nbsp&nbsp Linkedin:&nbsp</h4> </b><a  "href="https://www.linkedin.com/in/tulika-panjal-037507193"> www.linkedin.com/in/tulika-panjal-037507193</a></li>
+        <li><b style="color:white"><h4 style="display:inline;">&nbsp&nbsp Instagram:&nbsp </h4></b><a  "href="https://www.instagram.com/rong_tuli_7"> www.instagram.com/rong_tuli_7</a></li>
+        <li><b style="color:white"><h4 style="display:inline;">&nbsp&nbsp Facebook: &nbsp</h4></b><a  "href="https://www.fb.com/tulikapanjal.07"> www.fb.com/tulikapanjal.07</a></li>
+      </ul><br>
+      </div>
+    </div>
+    <br>
+      <center>
+      Designed by <b> Tulika Panjal </b>
+      <br>
+      <a href="mailto:mailmetulika98@gmail.com?subject=subject text"> mailmetulika98@gmail.com </a>
+      </center>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+
+  
+
+</html>

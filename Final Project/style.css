@@ -1,0 +1,2005 @@
+body{
+  margin: 0%;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif; 
+}
+header{
+  width: 100%;
+  position: fixed;
+  background-color: #1F2833;
+  float: right;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+header ul li {
+  list-style-type: none;
+  font-size: 15px;
+  color:white;
+  display: inline;
+  
+}
+header ul .Login:hover{
+  background-color:rgba(4, 6, 8, 0.719);
+} 
+header ul .Signup:hover{
+  background-color:rgba(4, 6, 8, 0.719);
+} 
+header ul .Help:hover{
+  background-color:rgba(4, 6, 8, 0.719);
+}
+header ul .Login, header ul .Signup, header ul .Help{
+
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 1.8%;
+  padding-bottom: 1.2%;
+  text-decoration: none;
+  color:rgb(209, 173, 13); 
+}
+header ul .Ad{
+  margin-right: 20%;
+}
+header ul .Cart{
+  margin-left: 5%;
+  margin-right: 2%;
+}
+img.Cart{
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+}
+
+header ul a{
+  text-decoration: none;
+  color:rgb(209, 173, 13);  
+}
+.modalLS{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.678);
+}
+.modal-content3 {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 70%; /* Could be more or less, depending on screen size */
+  background:  rgb(243, 159, 126);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.603);
+}
+.submitLogin{
+  width: 82%;
+  height: 30px;
+  font-size: 20px;
+  background-color: #1F2833;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.959);
+  color: white;
+  cursor: pointer;
+}
+.submitLogin:hover{
+  background-color:rgba(4, 6, 8, 0.719);
+}
+img.ava{
+  width: 130px; 
+  height:130px; 
+  margin-top:7%; 
+  padding:0%;
+}
+.modal-content4 {
+  background-color: #fefefe;
+  margin: .5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 90%; /* Could be more or less, depending on screen size */
+  background:  rgb(74, 206, 155);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.603);
+}
+.submitSignup{
+  width: 82%;
+  height: 30px;
+  font-size: 20px;
+  background-color: #1F2833;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.959);
+  color: white;
+  cursor: pointer;
+}
+.submitSignup:hover{
+background-color:rgba(4, 6, 8, 0.966);
+}
+.fname, .lname{
+width:39%; 
+height:30px; 
+font-size:14px;
+padding: 0%;
+margin: 0%;
+}
+.email, .password, .apassword{
+  width:80%;
+  height:30px; 
+  font-size:14px;
+  padding: 0%;
+margin: 0%;
+}
+.LBS{
+  width: 100%;
+  height: 10%;
+  padding-bottom: 0.05%;
+  background-color: #d5d6a9;
+}
+.LBS ul li {
+  list-style-type: none;
+  font-size: 15px;
+  color: black;
+  display: inline;
+}
+.LBS ul .Brand{
+  margin-right: 6%;
+} 
+.LBS ul .Dial{
+  margin-right: 8%;
+}
+img.Call{
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+  margin: 0%;
+  margin-bottom: .5%;
+  margin-left: .5%;
+}
+img.Brand{
+  width: 17%;
+  vertical-align: bottom;
+  padding-left: 6%;
+  padding-right: 1%;
+  padding-top: .5%;
+}
+img.Search{
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+  padding-right: 13%;
+  padding-left: 5%;
+  margin-right: 0.8%;
+  cursor: pointer;
+}
+.LBS ul li a{
+  text-decoration: none;
+  color:rgb(240, 226, 38);  
+}
+.LBS ul input[type=text] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  font-size: 16px;
+  margin-left: 4%;
+}
+.LBS ul button {
+  padding-top: 3px;
+  padding-bottom: 8px;
+  margin-top: 10px;
+  border: none;
+  font-size: 17px;
+  margin-right: 5%;
+}
+.LBS ul button:hover {
+  background: #ccc;
+}
+
+nav{
+  width: 100%;
+  height: 8%;
+  padding-top: 1px;
+  padding-bottom: 0.05%;
+  background-color: rgb(104, 21, 21);
+}
+nav ul a li {
+  list-style-type: none;
+  font-size: 15px;
+  color: rgb(213, 214, 169);
+  display: inline;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1.3%;
+  padding-bottom: 1.3%;
+}
+nav ul a{
+  list-style-type: none;
+  font-size: 15px;
+  color: rgb(213, 214, 169);
+  display: inline;
+  text-decoration: none;
+}
+nav ul a li:hover{
+  background-color:rgb(63, 13, 13);
+}
+nav ul .Home{
+  margin-left: 0%;
+}
+nav ul .ContactUs{
+  margin-right: 5%;
+}
+/*nav ul li{
+  margin-right: 8.2%;
+}*/
+
+.MySlides {
+  position: static;
+  width: 100%;
+  padding-top: 177px;
+  display:none;
+  }
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.Product{
+  width: 100%;
+  height: 20%;
+  background-color:rgb(213, 214, 169);
+  margin: 0px;
+  float: left;
+}
+.Product .row .column ul li{
+  list-style-type: none;
+}
+img.Grocery, img.household, img.personalcare, img.packedfoods{
+  width: 80%;
+  height: 80%;
+}
+.column {
+  float: left;
+  width: 21.70%;
+  height: 100%;
+  margin: 0px;
+  padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.column ul{
+  margin: 0px;
+}
+.column ul li{
+  border-radius: 25px;
+  border: 2px solid rgb(187, 187, 187);
+  margin: 0px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.column ul .Bar:hover{
+  background-color:rgba(6, 9, 12, 0.993);
+}
+.column ul a li{
+  background-color: #1F2833;
+}
+.column ul a{
+  text-decoration: none;
+  color: white;
+}
+.row:after {
+  display: table;
+}
+
+footer{
+  width: 100%;
+  height: 22%;
+  font-size: 13px;
+  background-color:  rgb(187, 110, 110);
+}
+.footerNav{
+  background-color:rgb(8, 8, 8);
+  height: 10%;
+  width: 100%;
+}
+.footerNav div{
+  width: 33.3%;
+  height: 270px;
+  float: left;
+  background-color:rgb(8, 8, 8);
+  font-size: 18px;
+}
+.footerNav div ul{
+  padding: 1%;
+}
+.footerNav div ul li{
+  list-style-type: none;
+  margin-right: 25%;
+}
+.footerNav div ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+
+@media (max-width: 374px)  {
+
+header ul li {
+  font-size: 10px;
+}
+
+img.Cart{
+  width: 5%;
+  height: 5%;
+}
+img.Call{
+  width: 5%;
+  height: 5%;
+  padding-top: 2%;
+}
+
+.LBS ul .Dial{
+  font-size: 12px;
+}
+.LBS ul .Brand{
+  margin-right: 1%;
+} 
+img.Brand{
+  width: 55%;
+  padding-left: 1%;
+  padding-right: 1%;
+  }
+.LBS ul input[type=text] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  font-size: 16px;
+}
+nav{
+  height: 10%;
+  margin-right: 5%;
+  padding: 0.1%;
+}
+nav ul{
+  padding-right: 5%;
+}
+nav ul li a{
+  font-size: 10px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+nav ul .Home{
+  margin: 0%;
+}
+nav ul .ContactUs{
+  padding-right: 0%;
+}
+nav ul li{
+ padding-right: 3%;
+}
+.MySlides {
+  position: static;
+  width: 100%;
+  padding-top: 68%;
+  display:none;
+  }
+h3{
+  font-size: 10px;
+}
+img.Grocery,img.household, img.personalcare, img.packedfoods{
+  width: 80%;
+  height: 80%;
+}
+.column {
+  float: left;
+  width: 43%;
+  height: 100%;
+  margin: 0px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+footer{
+  font-size: 10px;
+}
+.footerNav{
+  list-style-type: none;
+  width: 100%;
+}
+.footerNav div{
+  width: 100%;
+  height: 100%;
+  float: none;
+  vertical-align: middle;
+  padding-right: 0%;
+  margin-right: 0%;
+}
+.footerNav div ul {
+  padding-top: 15%;
+  padding-left: 10%;
+padding-right: 0%;
+  margin-right: 0%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+img.logo2{
+  text-align: center;
+  vertical-align: middle;
+}
+.footerNav div ul li b{
+  text-decoration: none;
+  font-size: 14px;
+}
+.footerNav div ul li a{
+  text-decoration: none;
+  font-size: 14px;
+  padding-left: 5%;
+}
+}
+@media (min-width: 375px) and (max-width: 424px){
+header ul li {
+  font-size: 10px;
+}
+header ul .Login, header ul .Signup, header ul .Help{
+  padding-right: 1%;
+}
+header ul .Login{
+  padding-left: 1%;
+}
+header ul .Ad{
+padding-right: 1%;
+}
+.Ad{
+  font-size: 8px;
+}
+img.Cart{
+  width: 3%;
+  height: 3%;
+}
+img.Call{
+  width: 5%;
+  height: 5%;
+  padding-top: 2%;
+}
+
+.LBS ul .Dial{
+  font-size: 12px;
+}
+.LBS ul .Brand{
+  margin-right: 1%;
+} 
+img.Brand{
+  width: 55%;
+  padding-left: 1%;
+  padding-right: 1%;
+  }
+.LBS ul input[type=text] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  font-size: 16px;
+}
+nav{
+  height: 10%;
+  margin-right: 5%;
+  padding: 0.1%;
+}
+nav ul{
+  padding-right: 10%;
+}
+nav ul li a{
+  font-size: 10px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+nav ul .Home{
+  margin: 0%;
+}
+nav ul .ContactUs{
+  padding-right: 0%;
+}
+nav ul li{
+ padding-right: 3%;
+}
+.MySlides {
+  position: static;
+  width: 100%;
+  padding-top: 60%;
+  display:none;
+  }
+h3{
+  font-size: 10px;
+}
+img.Grocery,img.household, img.personalcare, img.packedfoods{
+  width: 80%;
+  height: 80%;
+}
+.column {
+  float: left;
+  width: 43%;
+  height: 100%;
+  margin: 0px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+footer{
+  font-size: 10px;
+}
+.footerNav{
+  list-style-type: none;
+  width: 100%;
+}
+.footerNav div{
+  width: 100%;
+  height: 100%;
+  float: none;
+  vertical-align: middle;
+  padding-right: 0%;
+  margin-right: 0%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+.footerNav div ul {
+  padding-top: 15%;
+  padding-left: 10%;
+  padding-right: 0%;
+  margin-right: 0%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+.footerNav div ul li{
+  margin-left: 5%;
+}
+img.logo2{
+  text-align: center;
+  vertical-align: middle;
+}
+.footerNav div ul li b{
+  text-decoration: none;
+  font-size: 14px;
+}
+.footerNav div ul li a{
+  text-decoration: none;
+  font-size: 14px;
+  padding-left: 5%;
+}
+}
+@media (min-width: 425px) and (max-width: 767px){
+header ul li {
+  font-size: 8px;
+  padding-right: 1%;
+}
+header ul .Ad{
+  padding-right: 5%;
+}
+header ul .Cart{
+  padding-left: 1%;
+  padding-right: 2%;
+}
+img.Cart{
+  width: 2%;
+  height: 2%;
+}
+img.Call{
+  width: 2%;
+  height: 2%;
+  padding-bottom: 1%;
+}
+.LBS ul .Dial{
+  font-size: 10px;
+  padding-right: 0%;
+}
+.LBS ul .Brand{
+  margin-right: 1%;
+} 
+img.Brand{
+  width: 25%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  }
+img.Search{
+  width: 20px;
+  height: 20px;
+}
+.LBS ul input[type=text] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  font-size: 10px;
+}
+nav{
+  height: 10%;
+  margin-right: 5%;
+  padding: 0.1%;
+}
+nav ul{
+  padding-right: 10%;
+}
+nav ul li a{
+  font-size: 10px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+nav ul .Home{
+  margin: 0%;
+}
+nav ul .ContactUs{
+  padding-right: 0%;
+}
+nav ul li{
+ padding-right: 3%;
+}
+.MySlides {
+  position: static;
+  width: 100%;
+  height: 100%;
+  padding-top: 20%;
+  display:none;
+  }
+h3{
+  font-size: 10px;
+}
+img.Grocery,img.household, img.personalcare, img.packedfoods{
+  width: 60%;
+  height: 80%;
+}
+.column {
+  float: left;
+  width: 22%;
+  height: 100%;
+  margin: 0px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+footer{
+  font-size: 10px;
+}
+.footerNav{
+  list-style-type: none;
+  width: 100%;
+}
+.footerNav div{
+  width: 100%;
+  height: 100%;
+  float: none;
+  vertical-align: middle;
+  padding-right: 0%;
+  margin-right: 0%;
+}
+.footerNav div ul {
+  padding-top: 15%;
+  padding-left: 10%;
+padding-right: 0%;
+  margin-right: 0%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+img.logo2{
+  text-align: center;
+  vertical-align: middle;
+}
+.footerNav div ul li b{
+  text-decoration: none;
+  font-size: 14px;
+}
+.footerNav div ul li a{
+  text-decoration: none;
+  font-size: 14px;
+  padding-left: 5%;
+}
+}
+@media (min-width: 768px) and (max-width: 1240px){
+  header ul li {
+  font-size: 13px;
+  padding-right: 1%;
+}
+header ul .Ad{
+  padding-right: 10%;
+}
+header ul .Cart{
+  padding-left: 1%;
+  padding-right: 2%;
+}
+img.Cart{
+  width: 2%;
+  height: 2%;
+}
+img.Call{
+  width: 2%;
+  height: 2%;
+  padding-bottom: 1%;
+}
+.LBS ul .Dial{
+  font-size: 13px;
+  margin-right: 0%;
+  margin-left: 0%;
+}
+.LBS ul .Brand{
+  margin-right: 0%;
+  margin-left: 0%;
+} 
+img.Brand{
+  width: 22%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  }
+img.Search{
+  width: 18px;
+  height: 18px;
+}
+.LBS ul input[type=text] {
+  padding-top: 6px;
+  padding-bottom: 10px;
+  border: none;
+  font-size: 12px;
+}
+nav{
+  height: 10%;
+  margin-right: 5%;
+  padding: 0.1%;
+}
+nav ul{
+  padding-right: 10%;
+}
+nav ul li a{
+  font-size: 13px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+nav ul .Home{
+  margin: 0%;
+}
+nav ul .ContactUs{
+  padding-right: 0%;
+}
+nav ul li{
+ padding-right: 3%;
+}
+.MySlides {
+  position: static;
+  width: 100%;
+  padding-top: 15%;
+  display:none;
+  }
+h3{
+  font-size: 10px;
+}
+img.Grocery, img.household, img.personalcare, img.packedfoods{
+  width: 80%;
+  height: 80%;
+}
+.column {
+  float: left;
+  width: 22%;
+  height: 100%;
+  margin: 0px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+footer{
+  font-size: 13px;
+}
+.footerNav div ul li b{
+  text-decoration: none;
+  font-size: 12px;
+}
+}
+@media (min-width: 2550px){
+  img.DP{
+    width: 5%;
+    height: 5%;
+  }
+}
+
+
+
+/* Grocery Page */
+
+.Card{
+  padding-top: 10%;
+  width: 100%;
+  height: 20%;
+  background-color:rgb(213, 214, 169);
+  margin: 0px;
+  float: left;
+
+}
+.Card .row1{
+    padding-left: 2%;
+}
+.Card .row1 .column1 ul li{
+  list-style-type: none;
+
+}
+
+.column1 {
+  width: 25%;
+  height: 100%;
+  padding-right: 3%;
+  padding-top: 1%;
+  padding-bottom: 5%;
+  border: 2px rgb(132, 133, 134) solid;
+  margin-right: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.column1 ul .ViewMore{
+  background-color: #1F2833;
+  padding: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.column1 ul .ViewMore a{
+  color:white;
+}
+.column1 ul .ViewMore:hover{
+  background-color:rgba(6, 9, 12, 0.993);
+}
+.column1 ul{
+  margin: 0px;
+}
+.column1 ul li{
+  width: 100%;
+  border-radius: 25px;
+  font-size: 14px;
+  margin: 0px;
+  background-color: white;
+}
+
+.column1 ul a{
+  text-decoration: none;
+  color: black;
+}
+.row1:after {
+  display: table;
+}
+.Name{
+  padding-bottom: 5px;
+}
+.Card .raw1 .column1 .Image{
+  width: 250px;
+  height: 200px;
+}
+img.itemImg{
+  width: 180px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 6% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ModalImage{
+  float: left;
+  margin-left: 2%;
+  margin-top: 1.5%;
+
+}
+img.Item{
+  width: 80%;
+  margin-top: 2%;
+  margin-left: 7%;
+}
+
+.ModalDetails{
+  width: 60%;
+  float: right;
+  margin-top: 3.5%;
+  margin-right: 5%; 
+}
+.MName{
+  font-size: 18px;
+}
+.MPrice{
+  font-size: 24px;
+}
+.AddToCart{
+  margin: 3px;
+  padding: 2%;
+  background-color: rgb(255, 238, 0);
+  border-radius: 25px;
+  border: 1px grey solid;
+}
+.desc{
+  font-size: 17px;
+}
+@media (max-width: 374px) {
+.Card{
+  margin-top: 68%;
+}
+.column1 {
+  float: left;
+  width: 40%;
+  height: 260px;
+  padding-top: 2%;
+}
+.column1 ul li{
+  font-size: 10px;
+  margin-right: 25%;
+  margin-left: -13px;
+}
+.Card .raw1 .column1 .Image{
+  width: 40px;
+  height: 30px;
+}
+img.itemImg{
+  width: 50px;
+}
+img.Item{
+  margin-top: 4.5%;
+  margin-left: 2%;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 10px;
+  border: 1px solid #888;
+  width: 90%;
+  height: 90%; /* Could be more or less, depending on screen size */
+}
+.ModalImage{
+  float: left;
+}
+img.MItem{
+  width: 80px;
+  padding-top: 200%;
+  padding-left: 25%;
+}
+.MName{
+  font-size: 8px;
+}
+.MPrice{
+  font-size: 10px;
+  margin-bottom: 0%;
+}
+.ModalDetails{
+  width: 70%;
+  margin: 0%;
+  padding: 0%;
+}
+.AddToCart{
+  width: 40px;
+  height: 15px;
+  font-size: 4px;
+  margin-top: 1%;
+}
+.desc{
+  font-size: 10px;
+  margin-bottom: 1%;
+}
+}
+@media (min-width: 375px) and (max-width: 424px) {
+.Card{
+  margin-top: 60%;
+
+}
+.column1 {
+  float: left;
+  width: 41%;
+  height: 220px;
+  padding-top: 2%;
+}
+.column1 ul li{
+  font-size: 10px;
+  margin-right: 25%;
+  margin-left: -15px;
+}
+.Card .raw1 .column1 .Image{
+  width: 40px;
+  height: 30px;
+}
+img.itemImg{
+  width: 55px;
+}
+img.Item{
+  margin-top: 4.5%;
+  margin-left: 2%;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 10px;
+  border: 1px solid #888;
+  width: 90%;
+  height: 70%; /* Could be more or less, depending on screen size */
+}
+.ModalImage{
+  float: left;
+}
+img.MItem{
+  width: 90px;
+  padding-top: 100%;
+  padding-left: 25%;
+}
+.MName{
+  font-size: 10px;
+}
+.MPrice{
+  font-size: 10px;
+  margin-bottom: 0%;
+}
+.ModalDetails{
+  width: 70%;
+  margin: 0%;
+  padding: 0%;
+}
+.AddToCart{
+  width: 60px;
+  height: 15px;
+  font-size: 6px;
+  margin-top: 1%;
+}
+.desc{
+  font-size: 10px;
+  margin-bottom: 1%;
+}
+}
+@media (min-width: 425px) and (max-width: 767px) {
+.Card{
+  margin-top: 13%;
+}
+.column1 {
+  float: left;
+  width: 42%;
+  height: 300px;
+  padding-top: 2%;
+  margin-left: 2.3%;
+}
+.column1 ul li{
+  font-size: 12px;
+  margin-left: -20px;
+}
+.Card .raw1 .column1 .Image{
+  width: 70px;
+  height: 60px;
+}
+img.itemImg{
+  width: 110px;
+}
+img.Item{
+  margin-top: 4.5%;
+  margin-left: 2%;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 10px;
+  border: 1px solid #888;
+  width: 90%;
+  height: 85%; /* Could be more or less, depending on screen size */
+}
+.ModalImage{
+  float: left;
+}
+img.MItem{
+  width: 105px;
+  padding-top: 100%;
+  padding-left: 25%;
+}
+.MName{
+  font-size: 13px;
+}
+.MPrice{
+  font-size: 12px;
+  margin-bottom: 0%;
+}
+.ModalDetails{
+  width: 70%;
+  margin: 0%;
+  padding: 0%;
+}
+.AddToCart{
+  width: 70px;
+  height: 30px;
+  font-size: 8px;
+  margin-top: 1%;
+}
+.desc{
+  font-size: 10px;
+  margin-bottom: 1%;
+}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+.Card{
+  margin-top: 10%;
+}
+.column1 {
+  float: left;
+  width: 20%;
+  height: 320px;
+  padding-top: 2%;
+  margin-left: 0.7%;
+}
+.column1 ul li{
+  font-size: 12px;
+}
+.Card .raw1 .column1 .Image{
+  width: 70px;
+  height: 60px;
+}
+img.itemImg{
+  width: 110px;
+}
+img.Item{
+  margin-top: 4.5%;
+  margin-left: 2%;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 10px;
+  border: 1px solid #888;
+  width: 90%;
+  height: 85%; /* Could be more or less, depending on screen size */
+}
+.ModalImage{
+  float: left;
+}
+img.MItem{
+  width: 190px;
+  padding-top: 50%;
+  padding-left: 5%;
+}
+.MName{
+  font-size: 16px;
+}
+.MPrice{
+  font-size: 12px;
+  margin-bottom: 0%;
+}
+.ModalDetails{
+  width: 70%;
+  margin: 0%;
+  padding-top: 3%;
+}
+.AddToCart{
+  width: 120px;
+  height: 20px;
+  font-size: 10px;
+  margin: 0%;
+  padding: 0%;
+}
+.desc{
+  font-size: 10px;
+  margin-bottom: 1%;
+}
+
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+.Card{
+  margin-top: 6%;
+  width: 100%;
+}
+.column1 {
+  float: left;
+  width: 20%;
+  height: 330px;
+  padding-top: 2%;
+  margin-left: 0.7%;
+}
+.column1 ul li{
+  font-size: 12px;
+}
+.Card .raw1 .column1 .Image{
+  width: 70px;
+  height: 60px;
+}
+img.itemImg{
+  width: 150px;
+}
+img.Item{
+  margin-top: 4.5%;
+  margin-left: 2%;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 10px;
+  border: 1px solid #888;
+  width: 90%;
+  height: 70%; /* Could be more or less, depending on screen size */
+}
+.ModalImage{
+  float: left;
+}
+img.MItem{
+  width: 260px;
+  padding-top: 10%;
+  padding-left: 5%;
+}
+.MName{
+  font-size: 18px;
+}
+.MPrice{
+  font-size: 20px;
+  margin-bottom: 0%;
+}
+.ModalDetails{
+  width: 60%;
+  margin: 0%;
+  padding-top: 3%;
+  margin-right: 2%;
+}
+.AddToCart{
+  width: 120px;
+  height: 20px;
+  font-size: 14px;
+  margin: 0%;
+  padding: 0%;
+}
+.desc{
+  font-size: 16px;
+  margin-bottom: 1%;
+}
+}
+@media (min-width: 1441px) {
+.Card{
+  margin-top: 2%;
+  width: 100%;
+}
+.column1 {
+  float: left;
+  width: 20%;
+  height: 320px;
+  padding-top: 2%;
+  margin-left: 0.7%;
+}
+.column1 ul li{
+  font-size: 18px;
+}
+.Card .raw1 .column1 .Image{
+  width: 70px;
+  height: 60px;
+}
+img.itemImg{
+  width: 150px;
+}
+img.Item{
+  margin-top: 4.5%;
+  margin-left: 2%;
+}
+}
+
+
+/* ContactUs */
+
+.ContactUsT{
+  padding-top: 7%;
+  padding-bottom: 0%;
+  background-color: rgb(213, 214, 169);
+}
+.Main{
+  padding: 7%;
+}
+.ContactUsT .Main form ul li{
+  list-style-type: none;
+  padding: 1%;
+}
+.ContactUsT .Main form ul li input[type=text], .ContactUsT .Main form ul li input[type=tel], .ContactUsT .Main form ul li input[type=email]{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px #aaa solid;
+  font-size: 16px;
+  margin-left: 0%;
+}
+.ContactUsT .Main form ul li input .query{
+  height: 80%;
+  width: 20%;
+}
+.submit{
+  margin: 3px;
+  padding: 1.5%;
+  background-color: rgb(255, 238, 0);
+  border-radius: 25px;
+  border: 1px grey solid;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.modalContact {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content2 {
+  background-color: #fefefe;
+  margin: 6% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+  height: 10%; /* Could be more or less, depending on screen size */
+}
+
+@media (max-width: 374px){
+  .ContactUsT{
+    padding-top: 80%
+  }
+}
+@media (min-width: 375px) and (max-width: 424px){
+  .ContactUsT{
+    padding-top: 70%
+  }
+}
+@media (min-width: 425px) and (max-width: 500px){
+  .ContactUsT{
+    padding-top: 50%
+  }
+}
+@media (min-width: 501px) and (max-width: 767px){
+  .ContactUsT{
+    padding-top: 35%
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  .ContactUsT{
+    padding-top: 17%
+  }
+}
+@media (min-width: 1024px) and (max-width: 1339px){
+  .ContactUsT{
+    padding-top: 11%
+  }
+}
+
+/* Login SignUp */
+@media (max-width: 374px){
+  img.ava{
+    width: 120px; 
+    height: 120px; 
+    margin-top: 5%; 
+    padding: 0%;
+  }
+  .modalLS{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.678);
+}
+.modal-content3 {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 80%; /* Could be more or less, depending on screen size */
+  background:  rgb(243, 159, 126);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.603);
+}
+.submitLogin{
+  width: 82%;
+  height: 30px;
+  font-size: 20px;
+  background-color: #1F2833;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.692);
+  color: white;
+  cursor: pointer;
+}
+.submitLogin:hover{
+  background-color:rgba(4, 6, 8, 0.719);
+}
+.modal-content4 {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 91%; /* Could be more or less, depending on screen size */
+  background:  rgb(74, 206, 155);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.603);
+}
+.submitSignup{
+  width: 82%;
+  height: 30px;
+  font-size: 20px;
+  background-color: #1F2833;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.959);
+  color: white;
+  cursor: pointer;
+}
+.modalLS .modal-content4 form ul li{
+  font-size: 8px;
+}
+.modalLS .modal-content4 form ul li input[type=text], .modalLS .modal-content4 form ul li input[type=tel], .modalLS .modal-content4 form ul li input[type=email], .modal-content4 form ul li input[type=password], .modal-content3 form ul li input[type=email], .modal-content3 form ul li input[type=password]{
+  height: 20px;
+  border: 1px #aaa solid;
+  font-size: 8px;
+  margin-left: 0%;
+}
+.submitLogin, .submitSignup{
+  height: 20px;
+  font-size: 8px;
+}
+.email, .password, .apassword{
+  width:80%;
+  height:40px; 
+  font-size:30px;
+}
+}
+@media (min-width: 375px) and (max-width: 424px){
+  .modalLS{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.678);
+}
+  .modal-content3 {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 80%; /* Could be more or less, depending on screen size */
+  background:  rgb(243, 159, 126);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.603);
+}
+.submitLogin{
+  width: 82%;
+  height: 30px;
+  font-size: 20px;
+  background-color: #1F2833;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.692);
+  color: white;
+  cursor: pointer;
+}
+.submitLogin:hover{
+  background-color:rgba(4, 6, 8, 0.719);
+}
+.modal-content4 {
+  background-color: #fefefe;
+  margin: 1% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 91%; /* Could be more or less, depending on screen size */
+  background:  rgb(74, 206, 155);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.603);
+}
+.submitSignup{
+  width: 82%;
+  height: 30px;
+  font-size: 20px;
+  background-color: #1F2833;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.959);
+  color: white;
+  cursor: pointer;
+}
+.modalLS .modal-content4 form ul li{
+  font-size: 8px;
+}
+.modalLS .modal-content4 form ul li input[type=text], .modalLS .modal-content4 form ul li input[type=tel], .modalLS .modal-content4 form ul li input[type=email], .modal-content4 form ul li input[type=password], .modal-content3 form ul li input[type=email], .modal-content3 form ul li input[type=password]{
+  height: 20px;
+  border: 1px #aaa solid;
+  font-size: 8px;
+  margin-left: 0%;  
+  padding: 0%;
+  margin: 0%;
+}
+.submitLogin, .submitSignup{
+  height: 20px;
+  font-size: 8px;
+  padding: 0%;
+  margin: 0%;
+}
+.email, .password, .apassword{
+  width:80%;
+  height:40px; 
+  font-size:30px;
+  padding: 0%;
+  margin: 0%;
+}
+img.ava{
+  width: 90px;
+  height: 90px;
+}
+}
+@media (min-width: 425px) and (max-width: 767px){
+  .modalLS{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.678);
+}
+  .modal-content3 {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 80%; /* Could be more or less, depending on screen size */
+  background:  rgb(243, 159, 126);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.603);
+}
+.submitLogin{
+  width: 82%;
+  height: 30px;
+  font-size: 20px;
+  background-color: #1F2833;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.692);
+  color: white;
+  cursor: pointer;
+}
+.submitLogin:hover{
+  background-color:rgba(4, 6, 8, 0.719);
+}
+.modal-content4 {
+  background-color: #fefefe;
+  margin: 1% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 97%; /* Could be more or less, depending on screen size */
+  background:  rgb(74, 206, 155);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.603);
+}
+.submitSignup{
+  width: 82%;
+  height: 30px;
+  font-size: 20px;
+  background-color: #1F2833;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.959);
+  color: white;
+  cursor: pointer;
+}
+.modalLS .modal-content4 form ul li{
+  font-size: 8px;
+}
+.modalLS .modal-content4 form ul li input[type=text], .modalLS .modal-content4 form ul li input[type=tel], .modalLS .modal-content4 form ul li input[type=email], .modal-content4 form ul li input[type=password], .modal-content3 form ul li input[type=email], .modal-content3 form ul li input[type=password]{
+  height: 27px;
+  border: 1px #aaa solid;
+  font-size: 12px;
+  margin-left: 0%;  
+  padding: 0%;
+  margin: 0%;
+}
+.submitLogin, .submitSignup{
+  height: 27px;
+  font-size: 10px;
+  padding: 0%;
+  margin: 0%;
+}
+.email, .password, .apassword{
+  width:80%;
+  height:40px; 
+  font-size:30px;
+  padding: 0%;
+  margin: 0%;
+}
+img.ava{
+  width: 90px;
+  height: 90px;
+}
+}
+@media (min-width: 768px) and (max-width: 1440px){
+  .modalLS{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.678);
+}
+  .modal-content3 {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 80%; /* Could be more or less, depending on screen size */
+  background:  rgb(243, 159, 126);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.603);
+}
+.submitLogin{
+  width: 82%;
+  height: 30px;
+  font-size: 20px;
+  background-color: #1F2833;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.692);
+  color: white;
+  cursor: pointer;
+}
+.submitLogin:hover{
+  background-color:rgba(4, 6, 8, 0.719);
+}
+.modal-content4 {
+  background-color: #fefefe;
+  margin: 0%; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 97%; /* Could be more or less, depending on screen size */
+  background:  rgb(74, 206, 155);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.603);
+}
+.submitSignup{
+  width: 82%;
+  height: 30px;
+  font-size: 20px;
+  background-color: #1F2833;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.959);
+  color: white;
+  cursor: pointer;
+}
+.modalLS .modal-content4 form ul li{
+  font-size: 8px;
+}
+.modalLS .modal-content4 form ul li input[type=text], .modalLS .modal-content4 form ul li input[type=tel], .modalLS .modal-content4 form ul li input[type=email], .modal-content4 form ul li input[type=password], .modal-content3 form ul li input[type=email], .modal-content3 form ul li input[type=password]{
+  height: 27px;
+  border: 1px #aaa solid;
+  font-size: 12px;
+  margin-left: 0%;  
+  padding: 0%;
+  margin: 0%;
+}
+.submitLogin, .submitSignup{
+  height: 27px;
+  font-size: 10px;
+  padding: 0%;
+  margin: 0%;
+}
+.email, .password, .apassword{
+  width:80%;
+  height:40px; 
+  font-size:30px;
+  padding: 0%;
+  margin: 0%;
+}
+img.ava{
+  width: 90px;
+  height: 90px;
+}
+}
+
+/* About Us */
+
+body{
+  width: 100%;
+}
+
+.AboutUsT{
+  width: 100%;
+  padding-top: 7%;
+  padding-bottom: 0%;
+  background-color: rgb(213, 214, 169);
+}
+.AbtUs, .DevD{
+    font-size:44px;
+  }
+
+.Main{
+  padding: 7%;
+  font-size: 22px;
+}
+.DevProfile{
+  background-color: rgb(213, 214, 169);;
+  width: 100%;
+  height: 70%;
+}
+img.DP{
+  border-radius: 100%;
+  width: 50%;
+  height: 50%;
+  vertical-align: middle;
+  padding-bottom:10%; 
+  padding-top:10%;
+}
+.Prof{
+  width: 50%;
+  float: right;
+  background-color: rgb(213, 214, 169);
+
+}
+.Prof .ProfMain{
+  width:100%;
+}
+.Prof .ProfMain ul{
+  border: 20px #888 groove;
+  margin: 20%;
+  padding-bottom: 4%;
+  padding-left: 0%;
+  background-color: rgb(229, 158, 145);
+}
+.Prof .ProfMain ul li{
+  list-style-type: none;
+  font-size: 20px;
+  
+}
+.Prof .ProfMain ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 374px){
+  .AboutUsT{
+    padding-top: 80%;
+  }
+  .AbtUs{
+    font-size:16px;
+  }
+  .AboutUsT .Main .Para{
+    font-size:12px;
+  }
+  .Prof .ProfMain ul{
+  border: 5px #888 groove;
+  margin: 5%;
+  padding-bottom: 2%;
+  padding-left: 0%;
+  background-color: rgb(229, 158, 145);
+}
+  .AboutUsT .Prof .ProfMain ul li{
+    font-size:8px;
+
+    }
+}
+@media (min-width: 375px) and (max-width: 424px){
+  .AboutUsT{
+    padding-top: 70%;
+  }
+  .AbtUs{
+    font-size:17px;
+  }
+  .AboutUsT .Main .Para{
+    font-size:12px;
+  }
+  .Prof .ProfMain ul{
+  border: 5px #888 groove;
+  margin: 5%;
+  padding-bottom: 2%;
+  padding-left: 0%;
+  background-color: rgb(229, 158, 145);
+}
+  .AboutUsT .Prof .ProfMain ul li{
+    font-size: 8px;
+    }
+}
+@media (min-width: 425px) and (max-width: 500px){
+  .AboutUsT{
+    padding-top: 50%;
+  }
+  .AbtUs{
+    font-size:15px;
+  }
+  .AboutUsT .Main .Para{
+    font-size: 14px;
+  }
+  .Prof .ProfMain ul{
+  border: 5px #888 groove;
+  margin: 5%;
+  padding-bottom: 2%;
+  padding-left: 0%;
+  background-color: rgb(229, 158, 145);
+}
+  .AboutUsT .Prof .ProfMain ul li{
+    font-size: 13px;
+    }
+}
+@media (min-width: 501px) and (max-width: 767px){
+  .AboutUsT{
+    padding-top: 35%;
+  }
+  .AbtUs{
+    font-size:15px;
+  }
+  .AboutUsT .Main .Para{
+    font-size: 14px;
+  }
+  .Prof .ProfMain ul{
+  border: 5px #888 groove;
+  margin: 5%;
+  padding-bottom: 2%;
+  padding-left: 0%;
+  background-color: rgb(229, 158, 145);
+}
+  .AboutUsT .Prof .ProfMain ul li{
+    font-size: 13px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  .AboutUsT{
+    padding-top: 17%;
+  }
+  .AbtUs{
+    font-size:15px;
+  }
+  .AboutUsT .Main .Para{
+    font-size: 14px;
+  }
+  .Prof .ProfMain ul{
+  border: 5px #888 groove;
+  margin: 5%;
+  padding-bottom: 2%;
+  padding-left: 0%;
+  background-color: rgb(229, 158, 145);
+}
+  .AboutUsT .Prof .ProfMain ul li{
+    font-size: 13px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1339px){
+  .AboutUsT{
+    padding-top: 11%;
+  }
+  .AbtUs{
+    font-size:20px;
+  }
+  .AboutUsT .Main .Para{
+    font-size: 16px;
+  }
+  .Prof .ProfMain ul{
+  border: 5px #888 groove;
+  margin: 5%;
+  padding-bottom: 2%;
+  padding-left: 0%;
+  background-color: rgb(229, 158, 145);
+}
+  .AboutUsT .Prof .ProfMain ul li{
+    font-size: 16px;
+    }
+}
+
+
+
+/* Cart */
+
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}

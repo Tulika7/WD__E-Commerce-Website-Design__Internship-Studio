@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packed Foods | EL-Commercio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header><center>
+      <ul>
+        <li class="Ad"> SALE UP TO 70% OFF. USE CODE "SALE70%". </li>
+        <li class="Login"><a href="#myModalLogin" onclick="document.getElementById('myModalLogin').style.display='block'" id="myBtn"><b> Login </b></a></li>
+        <li class="Signup"><a href="#myModalSignup" onclick="document.getElementById('myModalSignup').style.display='block'" id="myBtn"><b> Signup </b></a></li>
+        <li class="Help"><a href="#Help"><b> Help </b></a></li>
+        <li class="Cart"><a href="Cart.html"> <img class="Cart" src="img/cart.png"></a></li>
+      </ul>
+        <div id="myModalLogin" class="modalLS">
+               <!-- Modal content -->
+               <div class="modal-content3">
+                 <span class="close" onclick="document.getElementById('myModalLogin').style.display='none'" style="color:black">x</span>
+                 <center><img class="ava" src="img/DP3.png"></center>
+                 <center><b style="font-size:30px;"><br> Log In </b></center><br>
+                 <form name="myForm" onsubmit="logindone()" method="post">
+                   <ul style="margin-left:0%; padding-left:0%;">
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <input type="email" name="email"  class="email" placeholder="Email" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <input type="password" name="password" class="password" placeholder="Password" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <b><a><input type="submit" class="submitLogin" value="Submit"></a></b>
+                     </li>
+                   </ul>
+                 </form>
+               </div>
+        </div>
+        <div id="myModalSignup" class="modalLS">
+               <!-- Modal content -->
+               <div class="modal-content4">
+                 <span class="close" onclick="document.getElementById('myModalSignup').style.display='none'" style="color:black">x</span>
+                 <img class="ava" src="img/DP3.png">
+                 <center><b style="font-size:150%;"><br> Sign Up </b></center>
+                 <form name="myForm" onsubmit="return checkPassword(this)" method="post">
+                   <ul style="margin-left:0%; padding-left:0%;">
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <input type="text" name="fname" placeholder="First Name" class="fname" required>
+                     </li>
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <input type="text" name="lname" class="lname" placeholder="Last Name" required><br>
+                     </li>
+                     <br><b style="font-size: 100%;">Gender:</b>
+                     <input type="radio" id="male" name="gender" value="male" >
+                     <label for="male" style="font-size:60%;">Male</label>
+                     <input type="radio" id="female" name="gender" value="female">
+                     <label for="female" style="font-size:60%;">Female</label>
+                     <input type="radio" id="other" name="gender" value="other">
+                     <label for="other" style="font-size:60%;">Other</label>
+                      <br><br><b style="font-size: 80%;">Date of Birth: &nbsp&nbsp</b>
+                      <input type="date" id="birthday" name="birthday"><br>
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <br><input type="email" name="email" placeholder="Email" class="email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <input type="password" name="password" placeholder="Password" class="password" required><br>
+                     </li>
+                     <li style="margin-left:3%; padding-left:0%; color:red;">
+                     * 1 Lower letter, 1 Capital letter, 1 digit and 1-8 characters.<br>
+                     </li>
+                     <br>
+                     <li>
+                       <input type="password" name="apassword" placeholder="Again Password" class="apassword"required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <b><a><input type="submit" class="submitSignup" value="Submit"></a></b>
+                     </li>
+                   </ul>
+                 </form>
+               </div>
+        </div>
+
+    <center>
+    <section class="LBS">
+       <ul>
+        <li class="Call"><a href="#Call"> <img class="Call" src="img/call.png"></a></li>
+        <li class="Dial"> Order online or call us : (+0123) 234 567 <a href="#Dial"></a></li>
+        <li class="Brand"><a href="#Brand"><img class="Brand" src="img/logo.png"></a></li>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><img class="Search" src="img/search.png"></button>
+      </ul>
+    </section>
+    </center>
+    
+    <center>
+    <nav>
+      <ul>
+        <a href="index.html"><li class="Home"> Home </li></a>
+        <a href="Grocery.html"> <li class="Groceries">Groceries </li></a>
+        <a href="HouseHold.html"> <li class="Household">House Hold </li></a>
+        <a href="PersonalCare.html"><li class="PersonalCare"> Personal Care </li></a>
+        <a href="PackedFoods.html"><li class="PackedFoods"> Packed Foods </li></a>
+        <a href="AboutUs.html"><li class="AboutUs"> About Us </li></a>
+        <a href="ContactUs.html"><li class="ContactUs"> Contact Us </li></a>
+      </ul>
+    </nav>
+    </center>
+    </header>
+    
+     <div class="Card">
+       <div class="row1">
+         <center>
+         <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/Walnut.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                Tim Tim California Walnuts Kernels Premium vacuum packed Walnuts (250 g)
+             </li>
+             <li>
+               <b>Rs. 388</b> &nbsp <s><font color="red">565</font></s><font color="green">&nbsp&nbsp 31% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>Kernels<br>Comes in a Vacuum Pack</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalWalnut" onclick="document.getElementById('myModalWalnut').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalWalnut" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalWalnut').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                    <img class="MItem"  src="img/Walnut.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li> <span  class="MName">
+                        Tim Tim California Walnuts Kernels Premium vacuum packed Walnuts (250 g)</span>
+                       </li>
+                       <br>
+                       <li>
+                         <b> <span  class="MPrice">Rs. 388</span></b> &nbsp <s><font color="red">565</font></s><font color="green">&nbsp&nbsp 40% OFF</font>
+                       </li>
+                       <br>
+                       <li>
+                         <button class="AddToCart" > ADD TO CART </button>
+                       </li>
+                       <br>
+                       <li>
+                         <b class="desc" style= "color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <p>Tim Tim California Walnut Kernels Premium 250gm is the crunchy and nutty taste of walnuts can accentuate the taste of any delicacy and amps up the health quotient. And an excellent source of several vitamins and minerals. Walnuts are most often eaten on their own as a snack. However, they can also be added to salads, pasta, breakfast cereals, soups, and baked goods. Walnuts are rich in protein. This vitamin may strengthen the immune system and support nerve health. A vitamin B6 deficiency may cause anemia. Keeping walnuts in their shells in a cool, dark, and dry place can improve their shelf life. Walnuts can be a healthful addition to the diet, they can also be added to salads, pasta, breakfast cereals, soups, and baked goods. Tim Tim is a premium flavored nuts and dry fruits brand. Tim Tim has pioneered a new and yummy way to consume the daily dose of healthy nuts and dry fruits. At Tim Tim, we bring the taste and health together in a single pack in the finest of packing. We believe in serving the best products to our customers and hence we travel across the world to procure the finest nuts and dry fruits. Our products are processed and packed in FSSC: 22000 & HACCP certified plant – The best among food safety ratings and certified by ‘FSSAI‘.</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+             </div>
+           </ul>
+         </div>
+         <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/dal.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                PINK DELIGHT Unpolished Mix Dal <br>(Split)  (1 kg)
+             </li>
+             <li>
+               <b>Rs. 248</b> &nbsp <s><font color="red">280</font></s><font color="green">&nbsp&nbsp 11% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>Mix Dal<br>Maximum Shelf Life 6 Months</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalDal" onclick="document.getElementById('myModalDal').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalDal" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalDal').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/dal.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        PINK DELIGHT Unpolished Mix Dal (Split)  (1 kg)
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 248</span></b> &nbsp <s><font color="red">280</font></s><font color="green">&nbsp&nbsp 11% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <button class="AddToCart" > ADD TO CART </button>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style="class="desc" color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <b>Brand</b><br>
+                           PINK DELIGHT
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Type</b><br>
+                           Mix Dal</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Maximum Shelf Life</b><br>
+                           6 Months</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+          <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/atta.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                Aashirvaad Superior MP Atta <br>(Whole-Wheat Flour) (5 kg)
+             </li>
+             <li>
+               <b>Rs. 249</b> &nbsp <s><font color="red">270</font></s><font color="green">&nbsp&nbsp 8% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>Whole-Wheat Flour<br>Maximum Shelf Life 3 Months</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalAtta" onclick="document.getElementById('myModalAtta').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalAtta" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalAtta').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem" src="img/atta.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        Aashirvaad Superior MP Atta (Whole-Wheat Flour) (5 kg)
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 249</span></b> &nbsp <s><font color="red">270</font></s><font color="green">&nbsp&nbsp 8% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style="color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <b>Brand</b><br>
+                           Aashirvaad
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Type</b><br>
+                           Whole-Wheat Flour</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Maximum Shelf Life</b><br>
+                           3 Months</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+             </div>
+           </ul>
+         </div>
+          <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/sugar.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                Indiana Sugar Thread - Dhaga Mishri Sweet Candy Sugar  (250 g)
+             </li>
+             <li>
+               <b>Rs. 150</b> &nbsp <s><font color="red">250</font></s><font color="green">&nbsp&nbsp 40% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>Thread-Dhaga Mishri Sweet Candy<br>Maximum Shelf Life 365 Days</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalSugar" onclick="document.getElementById('myModalSugar').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalSugar" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalSugar').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/sugar.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        Indiana Sugar Thread - Dhaga Mishri Sweet Candy Sugar  (250 g)
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 150</span></b> &nbsp <s><font color="red">250</font></s><font color="green">&nbsp&nbsp 40% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style="color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <b>Brand</b><br>
+                           Indiana
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Type</b><br>
+                           Sugar Thread - Dhaga Mishri Sweet Candy</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Quantity</b><br>
+                           250g</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Maximum Shelf Life</b><br>
+                           365 Days</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+         <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/salt.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                TATA Rock Salt <br>1KG Rock Salt  (1 kg)
+             </li>
+             <li>
+               <b>Rs. 120</b>
+             </li>
+             <li style="text-align:left">
+              <p>Rock Salt, 1KG, Fine Grain<br>Maximum Shelf Life 24 Months</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalSalt" onclick="document.getElementById('myModalSalt').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalSalt" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalSalt').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/salt.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName" >
+                        TATA Rock Salt, 1KG Rock Salt  (1 kg)
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 120</span></b>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style="class="desc" color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <b>Brand</b><br>
+                           TATA
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Type</b><br>
+                           Rock Salt</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Quantity</b><br>
+                           1 kg</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Maximum Shelf Life</b><br>
+                           24 Months</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+          <div class="column1">
+           <ul>
+               <img class="itemImg" src="img/oil.jpeg">
+             </li>
+             <br><br>
+             <li class="Name">
+                Fortune Sunlite Refined Sunflower Oil Pouch  (1 L)
+             </li>
+             <li>
+               <b>Rs. 142</b>
+             </li>
+             <li style="text-align:left">
+              <p>Sunlite Refine<br>Maximum Shelf Life 9 Months</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalOil" onclick="document.getElementById('myModalOil').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalOil" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalOil').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/oil.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName" >
+                        Fortune Sunlite Refined Sunflower Oil Pouch  (1 L)
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 142</span></b>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style="color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <b>Brand</b><br>
+                           Fortune
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Type</b><br>
+                           Sunflower Oil</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Quantity</b><br>
+                           1 L</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Maximum Shelf Life</b><br>
+                           9 Months</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+         <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/tea.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                Tata Gold Tea <br>Pouch  (750 g)
+             </li>
+             <li>
+               <b> Rs. 360</b> &nbsp <s><font color="red">400</font></s><font color="green">&nbsp&nbsp 10% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>Regular Tea, Plain<br>Maximum Shelf Life 12 Months</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalTea" onclick="document.getElementById('myModalTea').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalTea" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalTea').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/tea.jpeg" >
+                 </div>
+                 <div class="ModalDetails">class="desc" 
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName" >
+                        Tata Gold Tea Pouch  (750 g)
+                       </li>
+                       <br>
+                       <li>
+                         <b> <span  class="MPrice">Rs. 360</span></b> &nbsp <s><font color="red">400</font></s><font color="green">&nbsp&nbsp 10% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style="color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <b>Brand</b><br>
+                           TATA
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Type</b><br>
+                           Regular Tea</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Quantity</b><br>
+                           750 g</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Maximum Shelf Life</b><br>
+                           12 Months</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+         <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/turmeric.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                Everest TURMERIC POWDER <br>(500g)
+             </li>
+             <li>
+               <b> Rs. 176</b> &nbsp <s><font color="red">179</font></s><font color="green">&nbsp&nbsp 1% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>Powder, No Trans Fat<br>Maximum Shelf Life 12 Months</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalTurmaric" onclick="document.getElementById('myModalTurmaric').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalTurmaric" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalTurmaric').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/turmeric.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName" >
+                        Everest TURMERIC POWDER  (500 g)
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 176</span></b> &nbsp <s><font color="red">179</font></s><font color="green">&nbsp&nbsp 1% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style="color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <b>Brand</b><br>
+                           Everest
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Type</b><br>
+                           SPICE</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Quantity</b><br>
+                           500 g</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Maximum Shelf Life</b><br>
+                           12 Months</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+         </center>
+       </div>
+    </div>
+    <footer>
+
+    <div class="footerNav">
+      <div>
+        <img class="DP" style="width: 200px; height:200px; margin-top:1%; margin-bottom:1%; margin-left:7%; padding:5%;" src="img/logo2.jpg">
+      </div>
+      <div>
+      <ul>
+        <li style="font-size:24px; color:rgb(240, 226, 38); padding-top:3%;"><b>Inportant Links </b></li><br>
+        <li class="Home"><a href="index.html"> Home </a></li>
+        <li class="Groceries"><a href="Grocery.html">Groceries </a></li>
+        <li class="Household"><a href="HouseHold.html">House Hold </a></li>
+        <li class="PersonalCare"><a href="PersonalCare.html"> Personal Care</a></li>
+        <li class="PackedFoods"><a href="PackedFoods.html"> Packed Foods </a></li>
+        <li class="AboutUs"><a href="AboutUs.html"> About Us </a></li>
+        <li class="ContactUs"><a href="ContactUs.html"> Contact Us </a></li>
+      </ul>
+      </div>
+      <div>
+      <ul>
+        <li style="font-size:24px; color:rgb(240, 226, 38); padding-top:3%;"><b>Details</b></li><br>
+        <li><b style="color:white">Mobile: &nbsp </b><a style="font-size: 16px;" href="tel:7278146025"> +91-7278146025</a></li>
+        <li><b style="color:white">Email:&nbsp </b><a style="font-size: 16px;" href="mailto:mailmetulika98@gmail.com?subject=subject text"> mailmetulika98@gmail.com </a></li>
+        <li><b style="color:white">Linkedin:&nbsp </b><a  style="font-size: 16px;"href="https://www.linkedin.com/in/tulika-panjal-037507193"> www.linkedin.com/in/tulika-panjal-037507193</a></li>
+        <li><b style="color:white">Instagram:&nbsp </b><a  style="font-size: 16px;"href="https://www.instagram.com/rong_tuli_7"> www.instagram.com/rong_tuli_7</a></li>
+        <li><b style="color:white">Facebook: &nbsp</b><a  style="font-size: 16px;"href="https://www.fb.com/tulikapanjal.07"> www.fb.com/tulikapanjal.07 </a></li>
+      </ul><br>
+      </div>
+    </div>
+    <br>
+      <center>
+      Designed by <b> Tulika Panjal </b>
+      <br>
+      <a href="mailto:mailmetulika98@gmail.com?subject=subject text"> mailmetulika98@gmail.com </a>
+      </center>
+    </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

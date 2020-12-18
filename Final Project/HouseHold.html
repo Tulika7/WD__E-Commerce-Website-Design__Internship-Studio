@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Hold | EL-Commercio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="script.js" async></script>
+  </head>
+
+  <body>
+
+    <header><center>
+      <ul>
+        <li class="Ad"> SALE UP TO 70% OFF. USE CODE "SALE70%". </li>
+        <li class="Login"><a href="#myModalLogin" onclick="document.getElementById('myModalLogin').style.display='block'" id="myBtn"><b> Login </b></a></li>
+        <li class="Signup"><a href="#myModalSignup" onclick="document.getElementById('myModalSignup').style.display='block'" id="myBtn"><b> Signup </b></a></li>
+        <li class="Help"><a href="#Help"><b> Help </b></a></li>
+        <li class="Cart"><a href="Cart.html"> <img class="Cart" src="img/cart.png"></a></li>
+      </ul>
+        <div id="myModalLogin" class="modalLS">
+               <!-- Modal content -->
+               <div class="modal-content3">
+                 <span class="close" onclick="document.getElementById('myModalLogin').style.display='none'" style="color:black">x</span>
+                 <center><img class="ava" src="img/DP3.png"></center>
+                 <center><b style="font-size:30px;"><br> Log In </b></center><br>
+                 <form name="myForm" onsubmit="logindone()" method="post">
+                   <ul style="margin-left:0%; padding-left:0%;">
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <input type="email" name="email"  class="email" placeholder="Email" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <input type="password" name="password" class="password" placeholder="Password" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <b><a><input type="submit" class="submitLogin" value="Submit"></a></b>
+                     </li>
+                   </ul>
+                 </form>
+               </div>
+        </div>
+        <div id="myModalSignup" class="modalLS">
+               <!-- Modal content -->
+               <div class="modal-content4">
+                 <span class="close" onclick="document.getElementById('myModalSignup').style.display='none'" style="color:black">x</span>
+                 <img class="ava" src="img/DP3.png">
+                 <center><b style="font-size:150%;"><br> Sign Up </b></center>
+                 <form name="myForm" onsubmit="return checkPassword(this)" method="post">
+                   <ul style="margin-left:0%; padding-left:0%;">
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <input type="text" name="fname" placeholder="First Name" class="fname" required>
+                     </li>
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <input type="text" name="lname" class="lname" placeholder="Last Name" required><br>
+                     </li>
+                     <br><b style="font-size: 100%;">Gender:</b>
+                     <input type="radio" id="male" name="gender" value="male" >
+                     <label for="male" style="font-size:60%;">Male</label>
+                     <input type="radio" id="female" name="gender" value="female">
+                     <label for="female" style="font-size:60%;">Female</label>
+                     <input type="radio" id="other" name="gender" value="other">
+                     <label for="other" style="font-size:60%;">Other</label>
+                      <br><br><b style="font-size: 80%;">Date of Birth: &nbsp&nbsp</b>
+                      <input type="date" id="birthday" name="birthday"><br>
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <br><input type="email" name="email" placeholder="Email" class="email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <input type="password" name="password" placeholder="Password" class="password" required><br>
+                     </li>
+                     <li style="margin-left:3%; padding-left:0%; color:red;">
+                     * 1 Lower letter, 1 Capital letter, 1 digit and 1-8 characters.<br>
+                     </li>
+                     <br>
+                     <li>
+                       <input type="password" name="apassword" placeholder="Again Password" class="apassword"required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <b><a><input type="submit" class="submitSignup" value="Submit"></a></b>
+                     </li>
+                   </ul>
+                 </form>
+               </div>
+        </div>
+
+    <center>
+    <section class="LBS">
+       <ul>
+        <li class="Call"><a href="#Call"> <img class="Call" src="img/call.png"></a></li>
+        <li class="Dial"> Order online or call us : (+0123) 234 567 <a href="#Dial"></a></li>
+        <li class="Brand"><a href="#Brand"><img class="Brand" src="img/logo.png"></a></li>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><img class="Search" src="img/search.png"></button>
+      </ul>
+    </section>
+    </center>
+    
+    <center>
+    <nav>
+      <ul>
+        <a href="index.html"><li class="Home"> Home </li></a>
+        <a href="Grocery.html"> <li class="Groceries">Groceries </li></a>
+        <a href="HouseHold.html"> <li class="Household">House Hold </li></a>
+        <a href="PersonalCare.html"><li class="PersonalCare"> Personal Care </li></a>
+        <a href="PackedFoods.html"><li class="PackedFoods"> Packed Foods </li></a>
+        <a href="AboutUs.html"><li class="AboutUs"> About Us </li></a>
+        <a href="ContactUs.html"><li class="ContactUs"> Contact Us </li></a>
+      </ul>
+    </nav>
+    </center>
+    </header>
+    
+     <div class="Card">
+       <div class="row1">
+         <center>
+         <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/AC.jpg">
+             </li>
+             <br>
+             <li class="Name">
+                Voltas 0.8 Ton 3 Star Split AC - White (Copper Condenser)
+             </li>
+             <li>
+               <b>Rs. 21,999</b> &nbsp <s><font color="red">39,990</font></s><font color="green">&nbsp&nbsp 49% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>High Ambient Cooling<br>3D Flow</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalAC" onclick="document.getElementById('myModalAC').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalAC" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalAC').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                    <img class="MItem"  src="img/AC.jpg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li> <span  class="MName">
+                        Voltas 0.8 Ton 3 Star Split AC - White (Copper Condenser)</span>
+                       </li>
+                       <br>
+                       <li>
+                         <b> <span  class="MPrice">Rs. 21,999</span></b> &nbsp <s><font color="red">39,990</font></s><font color="green">&nbsp&nbsp 49% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <button class="AddToCart" > ADD TO CART </button>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style="color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <b>High Ambient Cooling</b><br>
+                           Thanks to the Turbo mode, this AC instantly cools your room down even at 50-degrees.
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>3D Flow</b><br>
+                           The 3D flow allows for multi-directional swing movement that facilitates uniform cooling throughout the room.</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>100% Copper</b><br>
+                           Thanks to the copper condensor coil, this AC is durable, energy-efficient and it delivers streamlined cooling.</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Dual Display</b><br>
+                           The dual display lets you keep a watch on the temperature of your room as well as the set temperature at the same time.</p>
+                          </li>
+                          
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+             </div>
+           </ul>
+         </div>
+         <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/towel.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                PVA Cotton 400 GSM Hand, Face Towel Set  (Pack of 6)
+             </li>
+             <li>
+               <b>Rs. 240</b> &nbsp <s><font color="red">391</font></s><font color="green">&nbsp&nbsp 48% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>HAND TOWELL<br>Bath Towels, BORDER LINE</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalTowel" onclick="document.getElementById('myModalTowel').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalTowel" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalTowel').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/towel.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        PVA Cotton 400 GSM Hand, Face Towel Set  (Pack of 6)
+                       </li>
+                       <br>
+                       <li>
+                         <b> <span  class="MPrice"> Rs. 240</span</b> &nbsp <s><font color="red">391</font></s><font color="green">&nbsp&nbsp 48% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <button class="AddToCart" > ADD TO CART </button>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style="color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <b>Sales Package</b><br>
+                           PACK OF 6
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Model Number</b><br>
+                           PI469736</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Model Name</b><br>
+                           Model Name, Bath Towels</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Ideal For</b><br>
+                           Boys & Girls, Women, Baby Boys & Baby Girls</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Size</b><br>
+                           S</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+          <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/dryer.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                Philips HP8100/60 Hair Dryer  <br> (1000 W, Blue)
+             </li>
+             <li>
+               <b>Rs. 749</b> &nbsp <s><font color="red">845</font></s><font color="green">&nbsp&nbsp 11% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>1000 W, 220-240V <br>2-year guarantee</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalDryer" onclick="document.getElementById('myModalDryer').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalDryer" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalDryer').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/dryer.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        Philips HP8100/60 Hair Dryer  (1000 W, Blue)
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 749</span></b> &nbsp <s><font color="red">845</font></s><font color="green">&nbsp&nbsp 11% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style="color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           Compact and ergonomic, this hairdryer benefits from a clever modern design. This results in a dryer that is light and easy to handle yet small enough to store virtually anywhere.This 1000W hairdryer creates the optimum level of airflow and gentle drying power, for beautiful results every day.The rubberised hook is located at the base of the handle and provides another storage option, particularly convenient for use in the home or when staying at a hotel.The concentrator works by focusing the flow of air through the opening onto specific areas. This results in precise styling and is great for touch ups or to finish a style.2 years of worldwide guarantee.The ThermoProtect temperature provides the optimal drying temperature and gives additional protection from overheating the hair. With the same powerful airflow, you will get the best results in a caring way.Careful drying with 2 flexible heat settings.
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+             </div>
+           </ul>
+         </div>
+          <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/blender.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                Apex Lassi, Butter Milk, Milk Shake, Egg Beater 50 W Hand Blender
+             </li>
+             <li>
+               <b>Rs. 128</b> &nbsp <s><font color="red">199</font></s><font color="green">&nbsp&nbsp 35% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>1 Power Free Hand Blender<br>Stainless Steel</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalBlender" onclick="document.getElementById('myModalBlender').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalBlender" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalBlender').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/blender.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        Apex Lassi, Butter Milk, Milk Shake, Egg Beater 50 W Hand Blender  (Red)
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 128</span></b> &nbsp <s><font color="red">199</font></s><font color="green">&nbsp&nbsp 35% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style="color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           Apex hand blender is a power free hand blender which can be used to blend a variety of food products such as lassi, milk shakes, butter milk, etc. Not just blending, this hand blender can also be used as an exerciser to your fingers. This hand blender contains stainless steel rotating blades which are ideal for blending lassi, milk shake, butter, whipping cream, curd and beating egg etc. The plastic handle is made by high quality food grade ABS plastic material which is durable and strong. The rotating blades are built using high quality stainless steel ensuring it is rust free and keeps the food safe. The blender has a heavy gear system to give steady grip. The rotating blades are easy to clean. This hand blender is an essential item for every kitchen these days.
+                          </li>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+         <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/mixer.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                Butterfly Rapid 4 Jar 750 watts 750 W Juicer Mixer Grinder (Black)
+             </li>
+             <li>
+               <b>Rs. 2849</b> &nbsp <s><font color="red">5499</font></s><font color="green">&nbsp&nbsp 48% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>User-friendly 3-Speed Knob<br>Stainless Steel Jars</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalMixer" onclick="document.getElementById('myModalMixer').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalMixer" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalMixer').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/mixer.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        Butterfly Rapid 4 Jar 750 watts 750 W Juicer Mixer Grinder  (Black, 4 Jars)
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 2849</span></b> &nbsp <s><font color="red">5499</font></s><font color="green">&nbsp&nbsp 48% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style="color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <p><b>User-friendly 3-Speed Knob</b><br>
+                           Using the Speed Knob, you can select the desired speed while grinding and mixing your food items. It also comes with the 'whip' feature that allows you to run the mixer grinder at its highest speed, so you can blend delicious smoothies, grind chillies and other veggies in seconds.</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Stainless Steel Jars</b><br>
+                           These attractive jars are made from premium quality stainless steel, ensuring rust-free maintenance and enhanced durability.</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Sharp Rotating Blades</b><br>
+                           To meet your precise chopping and grinding requirements, Butterfly has made its rotator blades - razor-sharp. This helps in chopping hard and coarse ingredients such as, black pepper, cardamom and other ingredients in very little time.</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+          <div class="column1">
+           <ul>
+               <img class="itemImg" src="img/bookshelf.jpeg">
+             </li>
+             <br><br>
+             <li class="Name">
+                Flipkart Perfect Homes Studio Metal Open Book Shelf  (Grey)
+             </li>
+             <li>
+               <b>Rs. 1699</b> &nbsp <s><font color="red">2759</font></s><font color="green">&nbsp&nbsp 38% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>Open | 12 Shelves | Metal<br>Free Standing</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalBookShelf" onclick="document.getElementById('myModalBookShelf').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalBookShelf" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalBookShelf').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/bookshelf.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        Flipkart Perfect Homes Studio Metal Open Book Shelf  (Grey)
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 1699</span></b> &nbsp <s><font color="red">2759</font></s><font color="green">&nbsp&nbsp 38% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style="color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <b>Type</b><br>
+                           Open | 12 Shelves
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Mount</b><br>
+                           Free Standing</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>W x H x D</b><br>
+                           152 cm x 144 cm x 31 cm (4 ft 11 in x 4 ft 8 in x 1 ft)</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Style</b><br>
+                           Contemporary & Modern</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+         <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/sofa.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                Perfect Homes PureWood Sheesham 2 Seater Fabric Sofa
+             </li>
+             <li>
+               <b> Rs. 19,690</b> &nbsp <s><font color="red">33,398</font></s><font color="green">&nbsp&nbsp 41% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>Upholestry: Jute<br>Pre Assembled (Ready to Use)</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalSofa" onclick="document.getElementById('myModalSofa').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalSofa" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalSofa').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/sofa.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        Perfect Homes PureWood Sheesham 2 Seater Fabric Sofa
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 19,690</span></b> &nbsp <s><font color="red">33,398</font></s><font color="green">&nbsp&nbsp 41% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style="color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <b>Filling Material</b><br>
+                           Foam
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Upholestry</b><br>
+                           Jute</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>W x H x D</b><br>
+                           124.4 cm x 81.2 cm x 68.6 cm (4 ft x 2 ft 7 in x 2 ft 3 in)</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Delivery Condition</b><br>
+                           Pre Assembled (Ready to Use)</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+         <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/fridge.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                Samsung 198 L Direct Cool Single Door with Base Drawer
+             </li>
+             <li>
+               <b> Rs. 17,490</b> &nbsp <s><font color="red">21,990</font></s><font color="green">&nbsp&nbsp 20% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>Energy-Efficient<br>Digital Inverter Compressor</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalFridge" onclick="document.getElementById('myModalFridge').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalFridge" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalFridge').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/fridge.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName" >
+                        Samsung 198 L Direct Cool Single Door 5 Star (2020) Refrigerator with Base Drawer
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 17,490</span></b> &nbsp <s><font color="red">21,990</font></s><font color="green">&nbsp&nbsp 20% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style="color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           This Samsung Direct Cool fridge is ideal for you. It is energy-efficient, which also makes it pocket-friendly. Additionally, it boasts the smart inverter compressor, which intelligently tracks cooling needs and provides efficient cooling to every corner of this fridge. Furthermore, you can keep your food fresh even during power cuts as it can easily work with your home inverter.
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Energy-Efficient</b><br>
+                           This Samsung fridge is energy-efficient, which means that it is pocket-friendly.</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Digital Inverter Compressor</b><br>
+                           It uses the digital inverter compressor to intelligently track and accordingly supply cooling to the seven different levels of this fridge. The compressor also consumes less energy, provides efficient cooling, reduces noise, and enhances the life.</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+         </center>
+       </div>
+    </div>
+    <footer>
+
+    <div class="footerNav">
+      <div>
+        <img class="DP" style="width: 200px; height:200px; margin-top:1%; margin-bottom:1%; margin-left:7%; padding:5%;" src="img/logo2.jpg">
+      </div>
+      <div>
+      <ul>
+        <li style="font-size:24px; color:rgb(240, 226, 38); padding-top:3%;"><b>Inportant Links </b></li><br>
+        <li class="Home"><a href="index.html"> Home </a></li>
+        <li class="Groceries"><a href="Grocery.html">Groceries </a></li>
+        <li class="Household"><a href="HouseHold.html">House Hold </a></li>
+        <li class="PersonalCare"><a href="PersonalCare.html"> Personal Care</a></li>
+        <li class="PackedFoods"><a href="PackedFoods.html"> Packed Foods </a></li>
+        <li class="AboutUs"><a href="AboutUs.html"> About Us </a></li>
+        <li class="ContactUs"><a href="ContactUs.html"> Contact Us </a></li>
+      </ul>
+      </div>
+      <div>
+      <ul>
+        <li style="font-size:24px; color:rgb(240, 226, 38); padding-top:3%;"><b>Details</b></li><br>
+        <li><b style="color:white">Mobile: &nbsp </b><a style="font-size: 16px;" href="tel:7278146025"> +91-7278146025</a></li>
+        <li><b style="color:white">Email:&nbsp </b><a style="font-size: 16px;" href="mailto:mailmetulika98@gmail.com?subject=subject text"> mailmetulika98@gmail.com </a></li>
+        <li><b style="color:white">Linkedin:&nbsp </b><a  style="font-size: 16px;"href="https://www.linkedin.com/in/tulika-panjal-037507193"> www.linkedin.com/in/tulika-panjal-037507193</a></li>
+        <li><b style="color:white">Instagram:&nbsp </b><a  style="font-size: 16px;"href="https://www.instagram.com/rong_tuli_7"> www.instagram.com/rong_tuli_7</a></li>
+        <li><b style="color:white">Facebook: &nbsp</b><a  style="font-size: 16px;"href="https://www.fb.com/tulikapanjal.07"> www.fb.com/tulikapanjal.07 </a></li>
+      </ul><br>
+      </div>
+    </div>
+    <br>
+      <center>
+      Designed by <b> Tulika Panjal </b>
+      <br>
+      <a href="mailto:mailmetulika98@gmail.com?subject=subject text"> mailmetulika98@gmail.com </a>
+      </center>
+    </footer>
+    </body>
+</html>

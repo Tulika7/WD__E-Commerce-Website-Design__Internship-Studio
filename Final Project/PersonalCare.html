@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Care | EL-Commercio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="script.js" async></script>
+  </head>
+
+  <body>
+
+   <header><center>
+      <ul>
+        <li class="Ad"> SALE UP TO 70% OFF. USE CODE "SALE70%". </li>
+        <li class="Login"><a href="#myModalLogin" onclick="document.getElementById('myModalLogin').style.display='block'" id="myBtn"><b> Login </b></a></li>
+        <li class="Signup"><a href="#myModalSignup" onclick="document.getElementById('myModalSignup').style.display='block'" id="myBtn"><b> Signup </b></a></li>
+        <li class="Help"><a href="#Help"><b> Help </b></a></li>
+        <li class="Cart"><a href="Cart.html"> <img class="Cart" src="img/cart.png"></a></li>
+      </ul>
+        <div id="myModalLogin" class="modalLS">
+               <!-- Modal content -->
+               <div class="modal-content3">
+                 <span class="close" onclick="document.getElementById('myModalLogin').style.display='none'" style="color:black">x</span>
+                 <center><img class="ava" src="img/DP3.png"></center>
+                 <center><b style="font-size:30px;"><br> Log In </b></center><br>
+                 <form name="myForm" onsubmit="logindone()" method="post">
+                   <ul style="margin-left:0%; padding-left:0%;">
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <input type="email" name="email"  class="email" placeholder="Email" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <input type="password" name="password" class="password" placeholder="Password" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <b><a><input type="submit" class="submitLogin" value="Submit"></a></b>
+                     </li>
+                   </ul>
+                 </form>
+               </div>
+        </div>
+        <div id="myModalSignup" class="modalLS">
+               <!-- Modal content -->
+               <div class="modal-content4">
+                 <span class="close" onclick="document.getElementById('myModalSignup').style.display='none'" style="color:black">x</span>
+                 <img class="ava" src="img/DP3.png">
+                 <center><b style="font-size:150%;"><br> Sign Up </b></center>
+                 <form name="myForm" onsubmit="return checkPassword(this)" method="post">
+                   <ul style="margin-left:0%; padding-left:0%;">
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <input type="text" name="fname" placeholder="First Name" class="fname" required>
+                     </li>
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <input type="text" name="lname" class="lname" placeholder="Last Name" required><br>
+                     </li>
+                     <br><b style="font-size: 100%;">Gender:</b>
+                     <input type="radio" id="male" name="gender" value="male" >
+                     <label for="male" style="font-size:60%;">Male</label>
+                     <input type="radio" id="female" name="gender" value="female">
+                     <label for="female" style="font-size:60%;">Female</label>
+                     <input type="radio" id="other" name="gender" value="other">
+                     <label for="other" style="font-size:60%;">Other</label>
+                      <br><br><b style="font-size: 80%;">Date of Birth: &nbsp&nbsp</b>
+                      <input type="date" id="birthday" name="birthday"><br>
+                     <li style="margin-left:0%; padding-left:0%;">
+                       <br><input type="email" name="email" placeholder="Email" class="email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <input type="password" name="password" placeholder="Password" class="password" required><br>
+                     </li>
+                     <li style="margin-left:3%; padding-left:0%; color:red;">
+                     * 1 Lower letter, 1 Capital letter, 1 digit and 1-8 characters.<br>
+                     </li>
+                     <br>
+                     <li>
+                       <input type="password" name="apassword" placeholder="Again Password" class="apassword"required><br>
+                     </li>
+                     <br>
+                     <li>
+                       <b><a><input type="submit" class="submitSignup" value="Submit"></a></b>
+                     </li>
+                   </ul>
+                 </form>
+               </div>
+        </div>
+
+    <center>
+    <section class="LBS">
+       <ul>
+        <li class="Call"><a href="#Call"> <img class="Call" src="img/call.png"></a></li>
+        <li class="Dial"> Order online or call us : (+0123) 234 567 <a href="#Dial"></a></li>
+        <li class="Brand"><a href="#Brand"><img class="Brand" src="img/logo.png"></a></li>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><img class="Search" src="img/search.png"></button>
+      </ul>
+    </section>
+    </center>
+    
+    <center>
+    <nav>
+      <ul>
+        <a href="index.html"><li class="Home"> Home </li></a>
+        <a href="Grocery.html"> <li class="Groceries">Groceries </li></a>
+        <a href="HouseHold.html"> <li class="Household">House Hold </li></a>
+        <a href="PersonalCare.html"><li class="PersonalCare"> Personal Care </li></a>
+        <a href="PackedFoods.html"><li class="PackedFoods"> Packed Foods </li></a>
+        <a href="AboutUs.html"><li class="AboutUs"> About Us </li></a>
+        <a href="ContactUs.html"><li class="ContactUs"> Contact Us </li></a>
+      </ul>
+    </nav>
+    </center>
+    </header>
+    
+     <div class="Card">
+       <div class="row1">
+         <center>
+         <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/bodylotion.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                Vaseline Intensive Care Deep Restore Body Lotion  (200 ml)
+             </li>
+             <li>
+               <b>Rs. 148</b> &nbsp <s><font color="red">185</font></s><font color="green">&nbsp&nbsp 20% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>Men & Women<br>Micro Droplets of Petroleum Jelly</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalBodyLotion" onclick="document.getElementById('myModalBodyLotion').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalBodyLotion" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalBodyLotion').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                    <img class="MItem"  src="img/bodylotion.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li> <span  class="MName">
+                        Vaseline Intensive Care Deep Restore Body Lotion  (200 ml)</span>
+                       </li>
+                       <br>
+                       <li>
+                         <b> <span  class="MPrice">Rs. 148</span></b> &nbsp <s><font color="red">185</font></s><font color="green">&nbsp&nbsp 20% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <button class="AddToCart" > ADD TO CART </button>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style= "color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           Pamper your dry skin with the Vaseline Intensive Care body lotion to get healthier and healed skin. Moisturized Skin, Enriched with micro-droplets of Vaseline jelly and glycerin, this lotion moisturises your skin and leaves it feeling fresh and hydrated all day long.
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Sales Package</b><br>                      
+                           1 Vaseline Intensive Care Deep Restore Body Lotion 200 ml</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Ideal For</b><br>
+                           Men & Women</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Maximum Shelf Life</b><br>
+                           24 Months</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+             </div>
+           </ul>
+         </div>
+         <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/cream.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                NIVEA Soft Moisturizing Cream  (100 ml)
+             </li>
+             <li>
+               <b>Rs. 120</b> &nbsp <s><font color="red">160</font></s><font color="green">&nbsp&nbsp 25% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>Application Area: Face<br>Maximum Shelf Life: 29 Months</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalCream" onclick="document.getElementById('myModalCream').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalCream" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalCream').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/cream.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        NIVEA Soft Moisturizing Cream  (100 ml)
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 120</span></b> &nbsp <s><font color="red">160</font></s><font color="green">&nbsp&nbsp 25% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <button class="AddToCart" > ADD TO CART </button>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style= "color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           Get smooth and radiant skin by using this Nivea Moisturiser. This cream suits almost all skin types.<br>
+                           Non-greasy Formula<br>
+                           This non-greasy cream gets absorbed into your skin quickly, leaving it healthy and nourished.<br>
+                           Gentle Moisturization<br>
+                           Enriched with the goodness of vitamin E and Jojoba oil, this cream gently moisturizes your skin, leaving it soft and supple.
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Maximum Shelf Life</b><br>
+                           29 Months</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+          <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/shampoo.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                WOW Skin Science Hair Loss Control Therapy Shampoo - 200 mL
+             </li>
+             <li>
+               <b>Rs. 245</b> &nbsp <s><font color="red">249</font></s><font color="green">&nbsp&nbsp 1% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>Anti-hair Fall Shampoo<br>All Hair Types</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalShampoo" onclick="document.getElementById('myModalShampoo').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalShampoo" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalShampoo').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/shampoo.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        WOW Skin Science Hair Loss Control Therapy Shampoo - 200 mL
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 245</span></b> &nbsp <s><font color="red">249</font></s><font color="green">&nbsp&nbsp 1% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style= "color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           100% pure, Contains Ayurvedic Herbal Extracts Bhringraj, Amla, Neem, Henna, Shikakai. Remove dandruff and fungal infections making hair clean as well as healthy. Strengthen hair and minimize hair damage. Your hair gets stronger. Split ends and breakage reduce.
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Applied For</b><br>
+                           Anti-hair Fall</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Composition</b><br>
+                           Bhringraj Extract, Amla Extract, Neem Extract, Henna Extract, Shikakai Extract, Lemon Extract, Biotin, Rosemary Extract, Saw Palmetto Extract, Niacin</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Ideal For</b><br>
+                           Men & Women</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+             </div>
+           </ul>
+         </div>
+          <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/conditioner.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                Himalaya Damage Repair Protein Conditioner  (200 ml)
+             </li>
+             <li>
+               <b>Rs. 140</b> &nbsp <s><font color="red">165</font></s><font color="green">&nbsp&nbsp 15% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>Damage Repair <br>Deep Conditioning</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalBlender" onclick="document.getElementById('myModalBlender').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalBlender" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalBlender').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/conditioner.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        Himalaya Damage Repair Protein Conditioner  (200 ml)
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 140</span></b> &nbsp <s><font color="red">165</font></s><font color="green">&nbsp&nbsp 15% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style= "color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <p><b>Applied For</b><br>
+                           Damage Repair, Deep Conditioning</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Hair Type</b><br>
+                           All Hair Type</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Ideal For</b><br>
+                           Men & Women</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Maximum Shelf Life</b><br>
+                           36 Months</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Hair Type</b><br>
+                           200 ml</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+         <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/toothpaste.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                Colgate Charcoal Clean ,Bamboo Charcoal and Mint (Black Gel)
+             </li>
+             <li>
+               <b>Rs. 288</b> &nbsp <s><font color="red">360</font></s><font color="green">&nbsp&nbsp 20% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>Ideal For Adults<br>Charcoal Clean, Mint</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalToothPaste" onclick="document.getElementById('myModalToothPaste').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalToothPaste" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalToothPaste').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/toothpaste.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        Colgate Charcoal Clean ,Bamboo Charcoal and Mint (Black Gel)
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 288</span></b> &nbsp <s><font color="red">360</font></s><font color="green">&nbsp&nbsp 20% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style= "color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <p><b>Brand</b><br>
+                           Colgate</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Model Name</b><br>
+                           Charcoal Clean ,Bamboo Charcoal and Mint (Black Gel)</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Quantity</b><br>
+                           480 g</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Ideal For</b><br>
+                           Adults</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Maximum Shelf Life</b><br>
+                           24 Months</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+          <div class="column1">
+           <ul>
+               <img class="itemImg" src="img/shavingcream.jpeg">
+             </li>
+             <br><br>
+             <li class="Name">
+                Gillette Satin Care Shave Gel  (195 g)
+             </li>
+             <li>
+               <b>Rs. 224</b> &nbsp <s><font color="red">225</font></s>
+             </li>
+             <li style="text-align:left">
+              <p>Satin Care Shave Gel<br>Ideal for Women</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalShavingCream" onclick="document.getElementById('myModalShavingCream').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalShavingCream" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalShavingCream').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/shavingcream.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        Gillette Satin Care Shave Gel  (195 g)
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 224</span></b> &nbsp <s><font color="red">225</font></s>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style= "color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <b>Brand</b><br>
+                           Gillette
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Model</b><br>
+                           Satin Care Shave Gel</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Quantity</b><br>
+                           195 g</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Ideal For</b><br>
+                           Women</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Maximum Shelf Life</b><br>
+                           36 Months</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+         <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/footcare.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                Oriflame Feet Up Advanced Cracked Heel Repair
+             </li>
+             <li>
+               <b> Rs. 240</b> &nbsp <s><font color="red">241</font></s>
+             </li>
+             <li style="text-align:left">
+              <p>Ideal For Men & Women<br>Organic Type - Natural</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalFootCare" onclick="document.getElementById('myModalFootCare').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalFootCare" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalFootCare').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/footcare.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        Oriflame Feet Up Advanced Cracked Heel Repair & Smooth Foot Cream
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 240</span></b> &nbsp <s><font color="red">241</font></s>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style= "color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           ROUGH, CRACKED HEELS? - SEE A VISIBLE IMPROVEMENT IN JUST 3 DAYS†1 Say goodbye to rough, cracked heels with Feet Up Advanced Cracked Heel Repair & Smooth Foot Cream. This rich, deeply conditioning cream is formulated with a trio of intensive moisturisers - Urea, Cocoa Butter and Panthenol - and Mineral4E Blend. Together they help restore and protect the condition of dry, rough and cracked skin, with a visible improvement in just 3 days†1. Clinically, consumer and dermatologically tested. Delicate, soothing fragrance.
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Ideal For</b><br>
+                           Men & Women</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Organic Type</b><br>
+                           Natural</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+         <div class="column1">
+           <ul>
+             <li class="Image">
+               <img class="itemImg" src="img/sanitary.jpeg">
+             </li>
+             <br>
+             <li class="Name">
+                Whisper Ultra Clean XL+ Sanitary Pad  (Pack of 44)
+             </li>
+             <li>
+               <b> Rs. 336</b> &nbsp <s><font color="red">420</font></s><font color="green">&nbsp&nbsp 20% OFF</font>
+             </li>
+             <li style="text-align:left">
+              <p>Size: XL+<br>Usage Type: Disposable</p>
+             </li>
+             <li class="ViewMore">
+               <a href="#myModalSanitary" onclick="document.getElementById('myModalSanitary').style.display='block'" id="myBtn"> View More </a>
+             </li>
+             <div id="myModalSanitary" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModalSanitary').style.display='none'" >&times;</span>
+                 <div class="ModalImage" style="text-align:left">
+                     <img class="MItem"  src="img/sanitary.jpeg" >
+                 </div>
+                 <div class="ModalDetails">
+                   <ul>
+                   <li>
+                     <ul style="text-align:left">
+                       <li class="MName">
+                        Whisper Ultra Clean XL+ Sanitary Pad  (Pack of 44)
+                       </li>
+                       <br>
+                       <li>
+                         <b><span  class="MPrice"> Rs. 336</span></b> &nbsp <s><font color="red">420</font></s><font color="green">&nbsp&nbsp 20% OFF</font>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <a href="#" class="AddToCart" > ADD TO CART </a>
+                       </li>
+                       <br>
+                       <br>
+                       <li>
+                         <b class="desc" style= "color:rgb(96, 96, 96)">Description:</b>
+                         <ul style="width: 75%; float: right" >
+                          <li style="width: 100%">
+                           <p><b>Type</b><br>
+                           Sanitary Pad</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Size</b><br>
+                           XL+</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Usage Type</b><br>
+                           Disposable</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>Wings</b><br>
+                           Yes</p>
+                          </li>
+                          <li style="width: 100%">
+                           <p><b>umber of Pads</b><br>
+                           44</p>
+                          </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                 </div>
+               </div>
+           </ul>
+         </div>
+         </center>
+       </div>
+    </div>
+    <footer>
+
+    <div class="footerNav">
+      <div>
+        <img class="DP" style="width: 200px; height:200px; margin-top:1%; margin-bottom:1%; margin-left:7%; padding:5%;" src="img/logo2.jpg">
+      </div>
+      <div>
+      <ul>
+        <li style="font-size:24px; color:rgb(240, 226, 38); padding-top:3%;"><b>Inportant Links </b></li><br>
+        <li class="Home"><a href="index.html"> Home </a></li>
+        <li class="Groceries"><a href="Grocery.html">Groceries </a></li>
+        <li class="Household"><a href="HouseHold.html">House Hold </a></li>
+        <li class="PersonalCare"><a href="PersonalCare.html"> Personal Care</a></li>
+        <li class="PackedFoods"><a href="PackedFoods.html"> Packed Foods </a></li>
+        <li class="AboutUs"><a href="AboutUs.html"> About Us </a></li>
+        <li class="ContactUs"><a href="ContactUs.html"> Contact Us </a></li>
+      </ul>
+      </div>
+      <div>
+      <ul>
+        <li style="font-size:24px; color:rgb(240, 226, 38); padding-top:3%;"><b>Details</b></li><br>
+        <li><b style="color:white">Mobile: &nbsp </b><a style="font-size: 16px;" href="tel:7278146025"> +91-7278146025</a></li>
+        <li><b style="color:white">Email:&nbsp </b><a style="font-size: 16px;" href="mailto:mailmetulika98@gmail.com?subject=subject text"> mailmetulika98@gmail.com </a></li>
+        <li><b style="color:white">Linkedin:&nbsp </b><a  style="font-size: 16px;"href="https://www.linkedin.com/in/tulika-panjal-037507193"> www.linkedin.com/in/tulika-panjal-037507193</a></li>
+        <li><b style="color:white">Instagram:&nbsp </b><a  style="font-size: 16px;"href="https://www.instagram.com/rong_tuli_7"> www.instagram.com/rong_tuli_7</a></li>
+        <li><b style="color:white">Facebook: &nbsp</b><a  style="font-size: 16px;"href="https://www.fb.com/tulikapanjal.07"> www.fb.com/tulikapanjal.07 </a></li>
+      </ul><br>
+      </div>
+    </div>
+    <br>
+      <center>
+      Designed by <b> Tulika Panjal </b>
+      <br>
+      <a href="mailto:mailmetulika98@gmail.com?subject=subject text"> mailmetulika98@gmail.com </a>
+      </center>
+    </footer>
+    </body>
+</html>
